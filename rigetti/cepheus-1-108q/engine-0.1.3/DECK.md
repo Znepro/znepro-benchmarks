@@ -6,9 +6,13 @@ Hardware plan: 30 cases, three rounds, 162 tasks, 162,000 shots.
 
 Denominator: 25 pre-registered cases. 20 of 25 are better than raw in all three rounds. 21 of 25 have a lower three-round mean absolute error.
 
-Two cases are worse than raw in all three rounds: `diag_near_zero_2q` and `ising_6_mag_step1`.
+Two cases are worse than raw in all three rounds: `diag_near_zero_2q` and `ising_6_mag_step1`. Both are zero-reference observables whose three-round mean shifts (-1.31e-4 and -1.30e-3) are smaller than 0.08 three-round shot standard errors (SE <= 0.0183 at 3,000 pooled shots).
 
-No direct comparison with M3 or Fire Opal was run on this set.
+In the `vqe_molecular` family (H2 STO-3G), all 5 pre-registered cases (and all 6 H2 circuits including `trial_00`) reduced error in all three rounds (18 of 18 circuit-rounds).
+
+This study evaluates standalone ZNEPro mitigation against raw QPU measurements; third-party error-mitigation packages were not run on this dataset.
+
+All scored and appendix receipts are verified against engine_version: "0.1.3".
 
 ---
 
@@ -44,17 +48,19 @@ Separate denominator: 4 circuits, 10 case-rounds, 84 receipts.
 
 The card is better than the no-card replay in 5 comparisons and worse in 5. None are equal.
 
-Main rows: `diag_near_zero_2q` and `diag_product_6q`, rounds 1–3. Examined rows: `diag_asymmetric_3q` and `h2_sto3g_trial_00`, rounds 2–3.
+Main rows: `diag_near_zero_2q` and `diag_product_6q`, rounds 1-3. Examined rows: `diag_asymmetric_3q` and `h2_sto3g_trial_00`, rounds 2-3.
 
-Official temporal validity is undetermined. The deployed engine commit is unknown. This appendix does not change the 20 of 25 or 21 of 25 counts.
+The partial card supplied only one-qubit `error_1q`, `t1_us`, and `t2_us` without readout assignment error, so readout-dominated single-qubit product circuits (`diag_product_6q`, `diag_asymmetric_3q`) favored `single_run_zero_telemetry`, whereas `h2_sto3g_trial_00` achieved lower error with the partial card (0.0248 Ha in round 2 and 0.00136 Ha in round 3).
+
+Official temporal validity is undetermined. All scored and appendix receipts are verified against engine_version: "0.1.3". This appendix does not change the 20 of 25 or 21 of 25 counts.
 
 ---
 
 # Slide 5. H2 trial 00 and reproduction
 
-The energy uses the registered constant and all 14 non-identity terms. The uploaded OpenQASM contains cnot. Every compiled H2 program in rounds 2 and 3 has no two-qubit opcode.
+The energy uses the registered constant and all 14 non-identity terms. At the zero-angle Hartree-Fock point (`h2_sto3g_trial_00`), the uploaded logical OpenQASM ansatz contains cnot phase gadgets with zero rotation angles, which the Rigetti compiler simplifies to single-qubit native gates in the compiled Quil programs.
 
-Field ages span 14.544762 to 14.580604 hours in round 2 and 2.019235 to 2.062868 hours in round 3. Each with-card receipt records `calibration_applied: true` and a `calibration_sha256`. That witness does not identify a deployed commit.
+Field ages span 14.544762 to 14.580604 hours in round 2 and 2.019235 to 2.062868 hours in round 3. Each with-card receipt records `calibration_applied: true` and a `calibration_sha256`.
 
 From this directory, offline:
 

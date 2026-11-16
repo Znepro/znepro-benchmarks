@@ -219,7 +219,7 @@ def check_wording() -> None:
     readme = (HERE / "README.md").read_text(encoding="utf-8")
     summary = (HERE / "SUMMARY.md").read_text(encoding="utf-8")
     for text in (readme, summary):
-        for phrase in ("20 of 25", "21 of 25", "diag_near_zero_2q", "ising_6_mag_step1", "ZNEPro", "Fire Opal", "M3", "162 tasks", "162,000"):
+        for phrase in ("20 of 25", "21 of 25", "diag_near_zero_2q", "ising_6_mag_step1", "ZNEPro", "third-party error-mitigation", "162 tasks", "162,000"):
             if phrase not in text:
                 fail(f"missing required phrase: {phrase}")
     slides = (HERE / "DECK.md").read_text(encoding="utf-8").split("\n---\n")

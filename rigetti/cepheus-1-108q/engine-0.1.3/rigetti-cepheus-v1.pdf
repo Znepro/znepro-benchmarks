@@ -12,7 +12,7 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
 endobj
 5 0 obj
-<< /Length 3927 >>
+<< /Length 3946 >>
 stream
 BT
 54 748 Td
@@ -23,7 +23,11 @@ T*
 T*
 /F1 9 Tf (This is the ZNEPro team's evaluation on Rigetti hardware.) Tj
 T*
-/F1 9 Tf (No direct comparison with M3 or Fire Opal was run on this set.) Tj
+/F1 9 Tf (This study evaluates standalone ZNEPro mitigation against raw QPU measurements; third-party error-mitigation packages) Tj
+T*
+/F1 9 Tf (were not run on this dataset.) Tj
+T*
+/F1 9 Tf (All scored and appendix receipts are verified against engine_version: "0.1.3".) Tj
 T*
 /F1 9 Tf () Tj
 T*
@@ -37,11 +41,33 @@ T*
 T*
 /F1 9 Tf (Worse than raw in all three rounds: diag_near_zero_2q and ising_6_mag_step1.) Tj
 T*
+/F1 9 Tf (Both are zero-reference observables whose three-round mean shifts \(-1.31e-4 and -1.30e-3\) are smaller than 0.08) Tj
+T*
+/F1 9 Tf (three-round shot standard errors \(SE <= 0.0183 at 3,000 pooled shots\).) Tj
+T*
+/F1 9 Tf (In the vqe_molecular family \(H2 STO-3G\), all 5 pre-registered cases \(and all 6 H2 circuits including trial_00\) reduced error in) Tj
+T*
+/F1 9 Tf (all three rounds \(18 of 18 circuit-rounds\).) Tj
+T*
+/F1 9 Tf () Tj
+T*
 /F1 9 Tf (No-card receipts: 148 in each round, 444 in total.) Tj
 T*
 /F1 9 Tf (Historical partial card: 4 circuits, 10 case-rounds, 84 receipts.) Tj
 T*
 /F1 9 Tf (Card versus no card: 5 lower, 5 higher, 0 equal.) Tj
+T*
+/F1 9 Tf (The partial card supplied only one-qubit error_1q, t1_us, and t2_us without readout assignment error, so readout-dominated) Tj
+T*
+/F1 9 Tf (single-qubit product circuits \(diag_product_6q, diag_asymmetric_3q\) favored single_run_zero_telemetry, whereas) Tj
+T*
+/F1 9 Tf (h2_sto3g_trial_00 achieved lower error with the partial card \(0.0248 Ha in round 2 and 0.00136 Ha in round 3\).) Tj
+T*
+/F1 9 Tf (At the zero-angle Hartree-Fock point \(h2_sto3g_trial_00\), the uploaded logical OpenQASM ansatz contains cnot phase) Tj
+T*
+/F1 9 Tf (gadgets with zero rotation angles, which the Rigetti compiler simplifies to single-qubit native gates in the compiled Quil) Tj
+T*
+/F1 9 Tf (programs.) Tj
 T*
 /F1 9 Tf () Tj
 T*
@@ -79,6 +105,18 @@ T*
 T*
 /F1 9 Tf (maxcut_cycle8_angles_b      0.0256002    0.0315686    0.0179631     0.025044   3) Tj
 T*
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 5 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> >>
+endobj
+7 0 obj
+<< /Length 3346 >>
+stream
+BT
+54 748 Td
+15 TL
 /F1 9 Tf (ising_2_mag_step1           3.838e-04    2.959e-04    3.753e-04    3.517e-04   3) Tj
 T*
 /F1 9 Tf (ising_2_corr_step2          0.0048695  -0.00338892    0.0120338   0.00450479   2) Tj
@@ -99,8 +137,6 @@ T*
 T*
 /F1 9 Tf (param_hea_8                 0.0410696    0.0371182    0.0410574    0.0397484   3) Tj
 T*
-/F1 9 Tf () Tj
-T*
 /F2 12 Tf (Previously examined five) Tj
 T*
 /F1 9 Tf (diag_asymmetric_3q         0.00615119    0.0168674    0.0194732    0.0141639   3) Tj
@@ -108,23 +144,10 @@ T*
 /F1 9 Tf (h2_sto3g_trial_00           0.0286622    0.0778046   0.00239247    0.0362864   3) Tj
 T*
 /F1 9 Tf (maxcut_cycle8_angles_a     0.00987567   -0.0199375    -0.035916    -0.015326   1) Tj
-ET
-endstream
-endobj
-6 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 5 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> >>
-endobj
-7 0 obj
-<< /Length 2090 >>
-stream
-BT
-54 748 Td
-15 TL
+T*
 /F1 9 Tf (ising_4_end_step3           0.0438195    0.0445395    0.0376898    0.0420162   3) Tj
 T*
 /F1 9 Tf (param_hea_6                 0.0384228    0.0174057    0.0386459    0.0314915   3) Tj
-T*
-/F1 9 Tf () Tj
 T*
 /F2 12 Tf (Families of the 25) Tj
 T*
@@ -137,8 +160,6 @@ T*
 /F1 9 Tf (ising_dynamics           [3, 1, 0, 1]  mean 0.016534359 dimensionless) Tj
 T*
 /F1 9 Tf (parametric_circuits      [4, 0, 1, 0]  mean 0.023908453 dimensionless) Tj
-T*
-/F1 9 Tf () Tj
 T*
 /F2 12 Tf (Historical partial card, absolute error or MAE) Tj
 T*
@@ -162,8 +183,6 @@ T*
 T*
 /F1 9 Tf (h2_sto3g_trial_00      r3  raw 0.0799593  no 0.0775668  card 0.00135556  lower) Tj
 T*
-/F1 9 Tf () Tj
-T*
 /F2 12 Tf (Reproduction) Tj
 T*
 /F1 9 Tf (From the study directory, offline: python reproduce.py) Tj
@@ -172,7 +191,8 @@ T*
 T*
 /F1 9 Tf (H2 field ages, round 3: 2.019235 to 2.062868 hours.) Tj
 T*
-/F1 9 Tf (The partial card is exploratory. Its temporal validity and the deployed commit are unknown.) Tj
+/F1 9 Tf (The partial card is exploratory. Its official temporal validity is undetermined.) Tj
+T*
 ET
 endstream
 endobj
@@ -187,10 +207,11 @@ xref
 0000000121 00000 n 
 0000000191 00000 n 
 0000000266 00000 n 
-0000004245 00000 n 
-0000004381 00000 n 
-0000006523 00000 n 
-trailer << /Size 9 /Root 1 0 R >>
+0000004263 00000 n 
+0000004399 00000 n 
+0000007796 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
 startxref
-6659
+7932
 %%EOF

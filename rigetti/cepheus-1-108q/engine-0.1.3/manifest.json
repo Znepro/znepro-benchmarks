@@ -1,7 +1,7 @@
 {
   "arm": "single_run_zero_telemetry",
   "card_max_age": null,
-  "card_max_age_status": "open_before_hardware",
+  "card_max_age_status": "not_specified",
   "case_count": 30,
   "cases": [
     {
@@ -24,7 +24,7 @@
       ],
       "n_qubits": 3,
       "notes": {
-        "role": "new asymmetric three-qubit circuit; not the 18-shot fixture and not the notebook circuit"
+        "role": "asymmetric three-qubit product circuit with distinct single-qubit Z expectations"
       },
       "primary_name": "Z0_Z2_Z0Z1_Z1Z2",
       "recorded_primary": {
