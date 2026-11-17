@@ -1,0 +1,23 @@
+{
+  "bit_order": "q0_left",
+  "case_id": "ising_2_mag_step1",
+  "counts": {
+    "00": 3754,
+    "01": 289,
+    "10": 50,
+    "11": 3
+  },
+  "group_id": "g0",
+  "kind": "benchmark",
+  "local_id": "r3/ising_2_mag_step1/g0",
+  "logical_to_physical": {
+    "0": 0,
+    "1": 1
+  },
+  "measured_qubits": 2,
+  "qasm_sha256": "a8bb46760d5893cd2fa67015d7f3a27b7cd6e8e4a1237ec825528140c0b41fa0",
+  "round": 3,
+  "shots": 4096,
+  "source_bit_order": "qiskit",
+  "status": "COMPLETED"
+}

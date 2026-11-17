@@ -1,0 +1,16 @@
+{
+  "arm": "in_session_card",
+  "calibration_applied": true,
+  "calibration_sha256": "cfdd7f8cf30ccd5c1ec3c5ec173c98a20be960d4c3c1c1722637d10829a00b70",
+  "card_name": "in_session_card",
+  "case_id": "maxcut_path6_angles_b",
+  "engine_version": "0.1.3",
+  "group_id": "g0",
+  "local_id": "r1/maxcut_path6_angles_b/g0/ZZIIII",
+  "mitigated_expectation": -0.468515961918047,
+  "observable": "ZZIIII",
+  "round": 1,
+  "status": "COMPLETED",
+  "target_observable": "ZZIIII",
+  "total_shots": 4096
+}

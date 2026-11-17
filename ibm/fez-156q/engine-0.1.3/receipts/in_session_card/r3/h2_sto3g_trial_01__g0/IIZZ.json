@@ -1,0 +1,16 @@
+{
+  "arm": "in_session_card",
+  "calibration_applied": true,
+  "calibration_sha256": "e03006f940889966f77fd38f5e8cc4f93ee1b49f92417fe75167fc2f7b503fae",
+  "card_name": "in_session_card",
+  "case_id": "h2_sto3g_trial_01",
+  "engine_version": "0.1.3",
+  "group_id": "g0",
+  "local_id": "r3/h2_sto3g_trial_01/g0/IIZZ",
+  "mitigated_expectation": -0.9653285349553985,
+  "observable": "IIZZ",
+  "round": 3,
+  "status": "COMPLETED",
+  "target_observable": "IIZZ",
+  "total_shots": 4096
+}

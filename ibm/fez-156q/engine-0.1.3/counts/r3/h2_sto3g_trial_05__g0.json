@@ -1,0 +1,36 @@
+{
+  "bit_order": "q0_left",
+  "case_id": "h2_sto3g_trial_05",
+  "counts": {
+    "0000": 11,
+    "0001": 1,
+    "0010": 59,
+    "0011": 9,
+    "0100": 4,
+    "0110": 16,
+    "0111": 2,
+    "1000": 80,
+    "1001": 26,
+    "1010": 3521,
+    "1011": 57,
+    "1100": 7,
+    "1101": 3,
+    "1110": 297,
+    "1111": 3
+  },
+  "group_id": "g0",
+  "kind": "benchmark",
+  "local_id": "r3/h2_sto3g_trial_05/g0",
+  "logical_to_physical": {
+    "0": 123,
+    "1": 122,
+    "2": 136,
+    "3": 143
+  },
+  "measured_qubits": 4,
+  "qasm_sha256": "b54995889120a68fb7000f0ee3285620ef89d5b7c0042514b9febf836baeca46",
+  "round": 3,
+  "shots": 4096,
+  "source_bit_order": "qiskit",
+  "status": "COMPLETED"
+}

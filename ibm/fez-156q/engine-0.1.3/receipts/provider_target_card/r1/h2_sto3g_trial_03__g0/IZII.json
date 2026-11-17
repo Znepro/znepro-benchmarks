@@ -1,0 +1,16 @@
+{
+  "arm": "provider_target_card",
+  "calibration_applied": true,
+  "calibration_sha256": "c61ebc1290d2dba44fdbeb33cb559c6df443caf937c7792567fd0011e689a943",
+  "card_name": "provider_target_card",
+  "case_id": "h2_sto3g_trial_03",
+  "engine_version": "0.1.3",
+  "group_id": "g0",
+  "local_id": "r1/h2_sto3g_trial_03/g0/IZII",
+  "mitigated_expectation": 0.7763321084031901,
+  "observable": "IZII",
+  "round": 1,
+  "status": "COMPLETED",
+  "target_observable": "IZII",
+  "total_shots": 4096
+}

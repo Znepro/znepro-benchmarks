@@ -1,4 +1,22 @@
-# rigetti-cepheus-v1
+# Releases
+
+## ibm-fez-v1
+
+This is the ZNEPro team's evaluation on IBM Fez (156Q Heron r2), engine 0.1.3.
+
+The hardware plan is 30 cases, three rounds, 162 benchmark tasks, 6 readout calibration tasks, and 688,128 shots. The scored arms are `single_run_zero_telemetry`, `provider_target_card`, and `in_session_card`. `m3_in_session` is rebuilt from the stored all-zero and all-one histograms. Of the 25 pre-registered cases, `in_session_card` has lower absolute error than raw in all three rounds for 19 of 25 and a lower three-round mean for 22 of 25. `single_run_zero_telemetry` is 19 of 25 and 20 of 25. `provider_target_card` is 16 of 25 and 18 of 25.
+
+Receipts cover all 30 cases: 444 for each arm and 1,332 in total. All scored receipts are verified against engine_version: "0.1.3". The provider card witness is `c61ebc1290d2dba44fdbeb33cb559c6df443caf937c7792567fd0011e689a943`. The in-session card replaces assignment probabilities with that round's readout pubs. This study evaluates standalone ZNEPro mitigation against raw QPU measurements; third-party error-mitigation packages were not run on this dataset.
+
+The PDF attached to this release is `ibm-fez-v1.pdf`.
+
+From the study directory:
+
+```bash
+python3 reproduce.py
+```
+
+## rigetti-cepheus-v1
 
 This is the ZNEPro team's evaluation on Rigetti Cepheus-1-108Q, engine 0.1.3.
 

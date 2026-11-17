@@ -1,0 +1,37 @@
+{
+  "bit_order": "q0_left",
+  "case_id": "param_hea_4_a",
+  "counts": {
+    "0000": 2806,
+    "0001": 203,
+    "0010": 89,
+    "0011": 336,
+    "0100": 94,
+    "0101": 194,
+    "0110": 19,
+    "0111": 290,
+    "1000": 8,
+    "1001": 2,
+    "1010": 15,
+    "1011": 5,
+    "1100": 3,
+    "1101": 1,
+    "1110": 2,
+    "1111": 29
+  },
+  "group_id": "g0",
+  "kind": "benchmark",
+  "local_id": "r1/param_hea_4_a/g0",
+  "logical_to_physical": {
+    "0": 0,
+    "1": 1,
+    "2": 2,
+    "3": 3
+  },
+  "measured_qubits": 4,
+  "qasm_sha256": "62e4b617c4c9940fad1bc67968bc872ec72cf00c75511c617287f70ae7f8b8a3",
+  "round": 1,
+  "shots": 4096,
+  "source_bit_order": "qiskit",
+  "status": "COMPLETED"
+}

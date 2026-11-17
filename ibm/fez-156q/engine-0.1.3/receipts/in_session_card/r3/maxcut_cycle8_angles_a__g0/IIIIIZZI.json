@@ -1,0 +1,16 @@
+{
+  "arm": "in_session_card",
+  "calibration_applied": true,
+  "calibration_sha256": "e03006f940889966f77fd38f5e8cc4f93ee1b49f92417fe75167fc2f7b503fae",
+  "card_name": "in_session_card",
+  "case_id": "maxcut_cycle8_angles_a",
+  "engine_version": "0.1.3",
+  "group_id": "g0",
+  "local_id": "r3/maxcut_cycle8_angles_a/g0/IIIIIZZI",
+  "mitigated_expectation": 0.0339307158111184,
+  "observable": "IIIIIZZI",
+  "round": 3,
+  "status": "COMPLETED",
+  "target_observable": "IIIIIZZI",
+  "total_shots": 4096
+}

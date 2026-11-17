@@ -1,0 +1,23 @@
+{
+  "bit_order": "q0_left",
+  "case_id": "diag_near_zero_2q",
+  "counts": {
+    "00": 2081,
+    "01": 55,
+    "10": 1905,
+    "11": 55
+  },
+  "group_id": "g0",
+  "kind": "benchmark",
+  "local_id": "r2/diag_near_zero_2q/g0",
+  "logical_to_physical": {
+    "0": 0,
+    "1": 1
+  },
+  "measured_qubits": 2,
+  "qasm_sha256": "00e68dbf7164a92c65404dd86d1d17737a1abf98912cf5c240e2ecac1ddf0250",
+  "round": 2,
+  "shots": 4096,
+  "source_bit_order": "qiskit",
+  "status": "COMPLETED"
+}

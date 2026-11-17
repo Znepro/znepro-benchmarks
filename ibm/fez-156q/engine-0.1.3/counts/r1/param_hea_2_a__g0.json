@@ -1,0 +1,23 @@
+{
+  "bit_order": "q0_left",
+  "case_id": "param_hea_2_a",
+  "counts": {
+    "00": 3594,
+    "01": 440,
+    "10": 11,
+    "11": 51
+  },
+  "group_id": "g0",
+  "kind": "benchmark",
+  "local_id": "r1/param_hea_2_a/g0",
+  "logical_to_physical": {
+    "0": 0,
+    "1": 1
+  },
+  "measured_qubits": 2,
+  "qasm_sha256": "71d23537faa8d0b9cdbb7cfdba75c4623567df59a00a4c6b6c75c13bf9946425",
+  "round": 1,
+  "shots": 4096,
+  "source_bit_order": "qiskit",
+  "status": "COMPLETED"
+}

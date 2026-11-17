@@ -1,0 +1,37 @@
+{
+  "bit_order": "q0_left",
+  "case_id": "diag_positive_zz_4q",
+  "counts": {
+    "0000": 946,
+    "0001": 33,
+    "0010": 37,
+    "0011": 968,
+    "0100": 53,
+    "0101": 3,
+    "0110": 3,
+    "0111": 53,
+    "1000": 53,
+    "1001": 2,
+    "1010": 2,
+    "1011": 47,
+    "1100": 936,
+    "1101": 42,
+    "1110": 37,
+    "1111": 881
+  },
+  "group_id": "g0",
+  "kind": "benchmark",
+  "local_id": "r1/diag_positive_zz_4q/g0",
+  "logical_to_physical": {
+    "0": 0,
+    "1": 1,
+    "2": 2,
+    "3": 3
+  },
+  "measured_qubits": 4,
+  "qasm_sha256": "f27fc4e09b62977687b9543031a60a8967a9b9e401528c8e16515f184355be4c",
+  "round": 1,
+  "shots": 4096,
+  "source_bit_order": "qiskit",
+  "status": "COMPLETED"
+}

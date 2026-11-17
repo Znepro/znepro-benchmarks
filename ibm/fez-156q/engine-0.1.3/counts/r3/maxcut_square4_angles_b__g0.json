@@ -1,0 +1,37 @@
+{
+  "bit_order": "q0_left",
+  "case_id": "maxcut_square4_angles_b",
+  "counts": {
+    "0000": 930,
+    "0001": 54,
+    "0010": 54,
+    "0011": 474,
+    "0100": 74,
+    "0101": 115,
+    "0110": 129,
+    "0111": 189,
+    "1000": 208,
+    "1001": 118,
+    "1010": 110,
+    "1011": 95,
+    "1100": 519,
+    "1101": 55,
+    "1110": 65,
+    "1111": 907
+  },
+  "group_id": "g0",
+  "kind": "benchmark",
+  "local_id": "r3/maxcut_square4_angles_b/g0",
+  "logical_to_physical": {
+    "0": 136,
+    "1": 123,
+    "2": 142,
+    "3": 143
+  },
+  "measured_qubits": 4,
+  "qasm_sha256": "2294008ce4c9cdde5cd1fa338b851852509645c742ac894f9da0608025e8a0f8",
+  "round": 3,
+  "shots": 4096,
+  "source_bit_order": "qiskit",
+  "status": "COMPLETED"
+}

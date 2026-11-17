@@ -1,0 +1,1877 @@
+{
+  "active_physical_qubits": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    136,
+    137,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147
+  ],
+  "benchmark_shots": 663552,
+  "benchmark_tasks": 162,
+  "case_count": 30,
+  "cases": [
+    {
+      "case_id": "diag_asymmetric_3q",
+      "cohort": "examined_5",
+      "constant": 0.0,
+      "family_id": "control_diagnostics",
+      "formula": "components",
+      "measurement_groups": [
+        {
+          "group_id": "g0",
+          "logical_to_physical": {
+            "0": 0,
+            "1": 1,
+            "2": 2
+          },
+          "observables": [
+            "IIZ",
+            "IZZ",
+            "ZII",
+            "ZZI"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[3];\ncreg c[3];\nrz(-3.1415926535897931) q[0];\nsx q[0];\nrz(2.7415926535897928) q[0];\nsx q[0];\nrz(-3.1415926535897931) q[1];\nsx q[1];\nrz(2.0415926535897935) q[1];\nsx q[1];\nrz(-3.1415926535897931) q[2];\nsx q[2];\nrz(0.94159265358979294) q[2];\nsx q[2];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\n"
+        }
+      ],
+      "n_qubits": 3,
+      "primary_name": "Z0_Z2_Z0Z1_Z1Z2",
+      "recorded_primary": {
+        "IIZ": -0.5885011172553459,
+        "IZZ": -0.26694182424164375,
+        "ZII": 0.9210609940028853,
+        "ZZI": 0.41778969447609576
+      },
+      "terms": [
+        {
+          "coefficient": 1.0,
+          "pauli": "ZII"
+        },
+        {
+          "coefficient": 1.0,
+          "pauli": "IIZ"
+        },
+        {
+          "coefficient": 1.0,
+          "pauli": "ZZI"
+        },
+        {
+          "coefficient": 1.0,
+          "pauli": "IZZ"
+        }
+      ]
+    },
+    {
+      "case_id": "diag_near_zero_2q",
+      "cohort": "main_25",
+      "constant": 0.0,
+      "family_id": "control_diagnostics",
+      "formula": "weighted_pauli",
+      "measurement_groups": [
+        {
+          "group_id": "g0",
+          "logical_to_physical": {
+            "0": 0,
+            "1": 1
+          },
+          "observables": [
+            "ZI"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[2];\ncreg c[2];\nrz(-1.5707963267948966) q[0];\nsx q[0];\nrz(1.5707963267948966) q[0];\nrz(-3.1415926535897931) q[1];\nsx q[1];\nrz(2.9415926535897929) q[1];\nsx q[1];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\n"
+        }
+      ],
+      "n_qubits": 2,
+      "primary_name": "Z0",
+      "recorded_primary": -4.475586568020162e-16,
+      "terms": [
+        {
+          "coefficient": 1.0,
+          "pauli": "ZI"
+        }
+      ]
+    },
+    {
+      "case_id": "diag_positive_zz_4q",
+      "cohort": "main_25",
+      "constant": 0.0,
+      "family_id": "control_diagnostics",
+      "formula": "weighted_pauli",
+      "measurement_groups": [
+        {
+          "group_id": "g0",
+          "logical_to_physical": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3
+          },
+          "observables": [
+            "ZZII"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[4];\ncreg c[4];\nrz(1.5707963267948966) q[0];\nsx q[0];\nrz(1.5707963267948966) q[0];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\ncz q[0],q[1];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\n"
+        }
+      ],
+      "n_qubits": 4,
+      "primary_name": "Z0Z1",
+      "recorded_primary": 0.9999999999999996,
+      "terms": [
+        {
+          "coefficient": 1.0,
+          "pauli": "ZZII"
+        }
+      ]
+    },
+    {
+      "case_id": "diag_negative_zz_4q",
+      "cohort": "main_25",
+      "constant": 0.0,
+      "family_id": "control_diagnostics",
+      "formula": "weighted_pauli",
+      "measurement_groups": [
+        {
+          "group_id": "g0",
+          "logical_to_physical": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3
+          },
+          "observables": [
+            "ZZII"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[4];\ncreg c[4];\nrz(1.5707963267948966) q[0];\nsx q[0];\nrz(1.5707963267948966) q[0];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\ncz q[0],q[1];\nrz(-1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(-1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\n"
+        }
+      ],
+      "n_qubits": 4,
+      "primary_name": "Z0Z1",
+      "recorded_primary": -0.9999999999999996,
+      "terms": [
+        {
+          "coefficient": 1.0,
+          "pauli": "ZZII"
+        }
+      ]
+    },
+    {
+      "case_id": "diag_product_6q",
+      "cohort": "main_25",
+      "constant": 0.0,
+      "family_id": "control_diagnostics",
+      "formula": "weighted_pauli",
+      "measurement_groups": [
+        {
+          "group_id": "g0",
+          "logical_to_physical": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5
+          },
+          "observables": [
+            "ZIIIII"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[6];\ncreg c[6];\nrz(-3.1415926535897931) q[0];\nsx q[0];\nrz(2.8415926535897933) q[0];\nsx q[0];\nrz(-3.1415926535897931) q[1];\nsx q[1];\nrz(2.3415926535897933) q[1];\nsx q[1];\nrz(-3.1415926535897931) q[2];\nsx q[2];\nrz(1.7415926535897928) q[2];\nsx q[2];\nrz(-3.1415926535897931) q[3];\nsx q[3];\nrz(1.1415926535897931) q[3];\nsx q[3];\nrz(-3.1415926535897931) q[4];\nsx q[4];\nrz(0.54159265358979347) q[4];\nsx q[4];\nrz(-3.1415926535897931) q[5];\nsx q[5];\nrz(3.0415926535897935) q[5];\nsx q[5];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\nmeasure q[4] -> c[4];\nmeasure q[5] -> c[5];\n"
+        }
+      ],
+      "n_qubits": 6,
+      "primary_name": "Z0",
+      "recorded_primary": 0.9553364891256063,
+      "terms": [
+        {
+          "coefficient": 1.0,
+          "pauli": "ZIIIII"
+        }
+      ]
+    },
+    {
+      "case_id": "diag_ghz_8q",
+      "cohort": "main_25",
+      "constant": 0.0,
+      "family_id": "control_diagnostics",
+      "formula": "weighted_pauli",
+      "measurement_groups": [
+        {
+          "group_id": "g0",
+          "logical_to_physical": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5,
+            "6": 6,
+            "7": 7
+          },
+          "observables": [
+            "ZIIIIIIZ"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[8];\ncreg c[8];\nrz(1.5707963267948966) q[0];\nsx q[0];\nrz(1.5707963267948966) q[0];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\ncz q[0],q[1];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[1],q[2];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\nrz(1.5707963267948966) q[4];\nsx q[4];\nrz(1.5707963267948966) q[4];\ncz q[3],q[4];\nrz(1.5707963267948966) q[4];\nsx q[4];\nrz(1.5707963267948966) q[4];\nrz(1.5707963267948966) q[5];\nsx q[5];\nrz(1.5707963267948966) q[5];\ncz q[4],q[5];\nrz(1.5707963267948966) q[5];\nsx q[5];\nrz(1.5707963267948966) q[5];\nrz(1.5707963267948966) q[6];\nsx q[6];\nrz(1.5707963267948966) q[6];\ncz q[5],q[6];\nrz(1.5707963267948966) q[6];\nsx q[6];\nrz(1.5707963267948966) q[6];\nrz(1.5707963267948966) q[7];\nsx q[7];\nrz(1.5707963267948966) q[7];\ncz q[6],q[7];\nrz(1.5707963267948966) q[7];\nsx q[7];\nrz(1.5707963267948966) q[7];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\nmeasure q[4] -> c[4];\nmeasure q[5] -> c[5];\nmeasure q[6] -> c[6];\nmeasure q[7] -> c[7];\n"
+        }
+      ],
+      "n_qubits": 8,
+      "primary_name": "Z0Z7",
+      "recorded_primary": 0.9999999999999998,
+      "terms": [
+        {
+          "coefficient": 1.0,
+          "pauli": "ZIIIIIIZ"
+        }
+      ]
+    },
+    {
+      "case_id": "h2_sto3g_trial_00",
+      "cohort": "examined_5",
+      "constant": -0.09057899440489847,
+      "family_id": "vqe_molecular",
+      "formula": "weighted_pauli",
+      "measurement_groups": [
+        {
+          "group_id": "g0",
+          "logical_to_physical": {
+            "0": 123,
+            "1": 122,
+            "2": 136,
+            "3": 143
+          },
+          "observables": [
+            "IIIZ",
+            "IIZI",
+            "IIZZ",
+            "IZII",
+            "IZIZ",
+            "IZZI",
+            "ZIII",
+            "ZIIZ",
+            "ZIZI",
+            "ZZII"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[4];\ncreg c[4];\nx q[0];\nx q[2];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\n"
+        },
+        {
+          "group_id": "g1",
+          "logical_to_physical": {
+            "0": 123,
+            "1": 122,
+            "2": 136,
+            "3": 143
+          },
+          "observables": [
+            "XXXX"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[4];\ncreg c[4];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nrz(1.5707963267948966) q[0];\nsx q[0];\nrz(-1.5707963267948966) q[0];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(-1.5707963267948966) q[2];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\n"
+        },
+        {
+          "group_id": "g2",
+          "logical_to_physical": {
+            "0": 123,
+            "1": 122,
+            "2": 136,
+            "3": 143
+          },
+          "observables": [
+            "XXYY"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[4];\ncreg c[4];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nrz(1.5707963267948966) q[0];\nsx q[0];\nrz(-1.5707963267948966) q[0];\nsx q[2];\nrz(-1.5707963267948966) q[2];\nrz(-3.1415926535897931) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\n"
+        },
+        {
+          "group_id": "g3",
+          "logical_to_physical": {
+            "0": 143,
+            "1": 142,
+            "2": 136,
+            "3": 123
+          },
+          "observables": [
+            "YYXX"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[4];\ncreg c[4];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(-1.5707963267948966) q[2];\nrz(-3.1415926535897931) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nsx q[0];\nrz(-1.5707963267948966) q[0];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\n"
+        },
+        {
+          "group_id": "g4",
+          "logical_to_physical": {
+            "0": 123,
+            "1": 122,
+            "2": 136,
+            "3": 143
+          },
+          "observables": [
+            "YYYY"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[4];\ncreg c[4];\nrz(-3.1415926535897931) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nsx q[0];\nrz(-1.5707963267948966) q[0];\nsx q[2];\nrz(-1.5707963267948966) q[2];\nrz(-3.1415926535897931) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\n"
+        }
+      ],
+      "n_qubits": 4,
+      "primary_name": "energy",
+      "recorded_primary": -1.1169989968520084,
+      "terms": [
+        {
+          "coefficient": -0.22575348784816623,
+          "pauli": "IIIZ"
+        },
+        {
+          "coefficient": 0.17218393302860957,
+          "pauli": "IIZI"
+        },
+        {
+          "coefficient": 0.12091263250339174,
+          "pauli": "IIZZ"
+        },
+        {
+          "coefficient": -0.22575348784816623,
+          "pauli": "IZII"
+        },
+        {
+          "coefficient": 0.17464342983154577,
+          "pauli": "IZIZ"
+        },
+        {
+          "coefficient": 0.16614543228746337,
+          "pauli": "IZZI"
+        },
+        {
+          "coefficient": 0.04523279978407166,
+          "pauli": "XXXX"
+        },
+        {
+          "coefficient": 0.04523279978407166,
+          "pauli": "XXYY"
+        },
+        {
+          "coefficient": 0.04523279978407166,
+          "pauli": "YYXX"
+        },
+        {
+          "coefficient": 0.04523279978407166,
+          "pauli": "YYYY"
+        },
+        {
+          "coefficient": 0.17218393302860957,
+          "pauli": "ZIII"
+        },
+        {
+          "coefficient": 0.16614543228746337,
+          "pauli": "ZIIZ"
+        },
+        {
+          "coefficient": 0.16892753905660612,
+          "pauli": "ZIZI"
+        },
+        {
+          "coefficient": 0.12091263250339174,
+          "pauli": "ZZII"
+        }
+      ]
+    },
+    {
+      "case_id": "h2_sto3g_trial_01",
+      "cohort": "main_25",
+      "constant": -0.09057899440489847,
+      "family_id": "vqe_molecular",
+      "formula": "weighted_pauli",
+      "measurement_groups": [
+        {
+          "group_id": "g0",
+          "logical_to_physical": {
+            "0": 123,
+            "1": 122,
+            "2": 136,
+            "3": 143
+          },
+          "observables": [
+            "IIIZ",
+            "IIZI",
+            "IIZZ",
+            "IZII",
+            "IZIZ",
+            "IZZI",
+            "ZIII",
+            "ZIIZ",
+            "ZIZI",
+            "ZZII"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[4];\ncreg c[4];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nx q[0];\ncz q[0],q[1];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(-2.8415926535897933) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\ncz q[0],q[1];\nsx q[1];\nrz(1.1707963267948962) q[1];\nsx q[1];\nx q[2];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(-1.5707963267948974) q[3];\nsx q[3];\nrz(-2.9415926535897921) q[3];\nsx q[3];\nrz(-1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[0],q[2];\nrz(1.5707963267948974) q[2];\nsx q[2];\nrz(-2.9915926535897936) q[2];\nsx q[2];\nrz(1.5707963267948957) q[2];\ncz q[0],q[2];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\n"
+        },
+        {
+          "group_id": "g1",
+          "logical_to_physical": {
+            "0": 123,
+            "1": 122,
+            "2": 136,
+            "3": 143
+          },
+          "observables": [
+            "XXXX"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[4];\ncreg c[4];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nx q[0];\ncz q[0],q[1];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(-2.8415926535897933) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\ncz q[0],q[1];\nsx q[1];\nrz(2.7415926535897928) q[1];\nsx q[1];\nrz(-3.1415926535897931) q[1];\nx q[2];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(-1.5707963267948974) q[3];\nsx q[3];\nrz(-2.9415926535897921) q[3];\nsx q[3];\nrz(-1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[0],q[2];\nrz(1.5707963267948974) q[2];\nsx q[2];\nrz(-2.9915926535897936) q[2];\nsx q[2];\nrz(1.5707963267948957) q[2];\ncz q[0],q[2];\nrz(1.5707963267948966) q[0];\nsx q[0];\nrz(1.5707963267948966) q[0];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\n"
+        },
+        {
+          "group_id": "g2",
+          "logical_to_physical": {
+            "0": 123,
+            "1": 122,
+            "2": 136,
+            "3": 143
+          },
+          "observables": [
+            "XXYY"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[4];\ncreg c[4];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nx q[0];\ncz q[0],q[1];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(-2.8415926535897933) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\ncz q[0],q[1];\nsx q[1];\nrz(2.7415926535897928) q[1];\nsx q[1];\nrz(-3.1415926535897931) q[1];\nx q[2];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(-1.5707963267948974) q[3];\nsx q[3];\nrz(-2.9415926535897921) q[3];\nsx q[3];\nrz(-1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[0],q[2];\nrz(1.5707963267948974) q[2];\nsx q[2];\nrz(-2.9915926535897936) q[2];\nsx q[2];\nrz(1.5707963267948957) q[2];\ncz q[0],q[2];\nrz(1.5707963267948966) q[0];\nsx q[0];\nrz(1.5707963267948966) q[0];\nsx q[2];\nsx q[3];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\n"
+        },
+        {
+          "group_id": "g3",
+          "logical_to_physical": {
+            "0": 143,
+            "1": 142,
+            "2": 136,
+            "3": 123
+          },
+          "observables": [
+            "YYXX"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[4];\ncreg c[4];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\nx q[2];\ncz q[2],q[3];\nrz(-1.5707963267948974) q[3];\nsx q[3];\nrz(-2.9415926535897921) q[3];\nsx q[3];\nrz(-1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nx q[0];\ncz q[0],q[1];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(-2.8415926535897933) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\ncz q[0],q[1];\nsx q[1];\nrz(-0.40000000000000036) q[1];\ncz q[0],q[2];\nrz(1.5707963267948974) q[2];\nsx q[2];\nrz(-2.9915926535897936) q[2];\nsx q[2];\nrz(1.5707963267948957) q[2];\ncz q[0],q[2];\nrz(-3.1415926535897931) q[0];\nsx q[0];\nrz(1.5707963267948966) q[0];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\n"
+        },
+        {
+          "group_id": "g4",
+          "logical_to_physical": {
+            "0": 123,
+            "1": 122,
+            "2": 136,
+            "3": 143
+          },
+          "observables": [
+            "YYYY"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[4];\ncreg c[4];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nx q[0];\ncz q[0],q[1];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(-2.8415926535897933) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\ncz q[0],q[1];\nsx q[1];\nrz(-0.40000000000000036) q[1];\nx q[2];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(-1.5707963267948974) q[3];\nsx q[3];\nrz(-2.9415926535897921) q[3];\nsx q[3];\nrz(-1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[0],q[2];\nrz(1.5707963267948974) q[2];\nsx q[2];\nrz(-2.9915926535897936) q[2];\nsx q[2];\nrz(1.5707963267948957) q[2];\ncz q[0],q[2];\nrz(-3.1415926535897931) q[0];\nsx q[0];\nrz(1.5707963267948966) q[0];\nsx q[2];\nsx q[3];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\n"
+        }
+      ],
+      "n_qubits": 4,
+      "primary_name": "energy",
+      "recorded_primary": -1.0903043413776758,
+      "terms": [
+        {
+          "coefficient": -0.22575348784816623,
+          "pauli": "IIIZ"
+        },
+        {
+          "coefficient": 0.17218393302860957,
+          "pauli": "IIZI"
+        },
+        {
+          "coefficient": 0.12091263250339174,
+          "pauli": "IIZZ"
+        },
+        {
+          "coefficient": -0.22575348784816623,
+          "pauli": "IZII"
+        },
+        {
+          "coefficient": 0.17464342983154577,
+          "pauli": "IZIZ"
+        },
+        {
+          "coefficient": 0.16614543228746337,
+          "pauli": "IZZI"
+        },
+        {
+          "coefficient": 0.04523279978407166,
+          "pauli": "XXXX"
+        },
+        {
+          "coefficient": 0.04523279978407166,
+          "pauli": "XXYY"
+        },
+        {
+          "coefficient": 0.04523279978407166,
+          "pauli": "YYXX"
+        },
+        {
+          "coefficient": 0.04523279978407166,
+          "pauli": "YYYY"
+        },
+        {
+          "coefficient": 0.17218393302860957,
+          "pauli": "ZIII"
+        },
+        {
+          "coefficient": 0.16614543228746337,
+          "pauli": "ZIIZ"
+        },
+        {
+          "coefficient": 0.16892753905660612,
+          "pauli": "ZIZI"
+        },
+        {
+          "coefficient": 0.12091263250339174,
+          "pauli": "ZZII"
+        }
+      ]
+    },
+    {
+      "case_id": "h2_sto3g_trial_02",
+      "cohort": "main_25",
+      "constant": -0.09057899440489847,
+      "family_id": "vqe_molecular",
+      "formula": "weighted_pauli",
+      "measurement_groups": [
+        {
+          "group_id": "g0",
+          "logical_to_physical": {
+            "0": 123,
+            "1": 122,
+            "2": 136,
+            "3": 143
+          },
+          "observables": [
+            "IIIZ",
+            "IIZI",
+            "IIZZ",
+            "IZII",
+            "IZIZ",
+            "IZZI",
+            "ZIII",
+            "ZIIZ",
+            "ZIZI",
+            "ZZII"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[4];\ncreg c[4];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nx q[0];\ncz q[0],q[1];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(-2.5415926535897935) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\ncz q[0],q[1];\nsx q[1];\nrz(1.3207963267948966) q[1];\nsx q[1];\nx q[2];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(-2.6415926535897931) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[0],q[2];\nrz(-1.5707963267948974) q[2];\nsx q[2];\nrz(-2.6915926535897929) q[2];\nsx q[2];\nrz(-1.5707963267948966) q[2];\ncz q[0],q[2];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\n"
+        },
+        {
+          "group_id": "g1",
+          "logical_to_physical": {
+            "0": 123,
+            "1": 122,
+            "2": 136,
+            "3": 143
+          },
+          "observables": [
+            "XXXX"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[4];\ncreg c[4];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nx q[0];\ncz q[0],q[1];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(-2.5415926535897935) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\ncz q[0],q[1];\nsx q[1];\nrz(2.8915926535897931) q[1];\nsx q[1];\nrz(-3.1415926535897931) q[1];\nx q[2];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(-2.6415926535897931) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[0],q[2];\nrz(-1.5707963267948974) q[2];\nsx q[2];\nrz(-2.6915926535897929) q[2];\nsx q[2];\nrz(-1.5707963267948966) q[2];\ncz q[0],q[2];\nrz(1.5707963267948966) q[0];\nsx q[0];\nrz(1.5707963267948966) q[0];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\n"
+        },
+        {
+          "group_id": "g2",
+          "logical_to_physical": {
+            "0": 123,
+            "1": 122,
+            "2": 136,
+            "3": 143
+          },
+          "observables": [
+            "XXYY"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[4];\ncreg c[4];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nx q[0];\ncz q[0],q[1];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(-2.5415926535897935) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\ncz q[0],q[1];\nsx q[1];\nrz(2.8915926535897931) q[1];\nsx q[1];\nrz(-3.1415926535897931) q[1];\nx q[2];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(-2.6415926535897931) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[0],q[2];\nrz(-1.5707963267948974) q[2];\nsx q[2];\nrz(-2.6915926535897929) q[2];\nsx q[2];\nrz(-1.5707963267948966) q[2];\ncz q[0],q[2];\nrz(1.5707963267948966) q[0];\nsx q[0];\nrz(1.5707963267948966) q[0];\nsx q[2];\nsx q[3];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\n"
+        },
+        {
+          "group_id": "g3",
+          "logical_to_physical": {
+            "0": 143,
+            "1": 142,
+            "2": 136,
+            "3": 123
+          },
+          "observables": [
+            "YYXX"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[4];\ncreg c[4];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\nx q[2];\ncz q[2],q[3];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(-2.6415926535897931) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nx q[0];\ncz q[0],q[1];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(-2.5415926535897935) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\ncz q[0],q[1];\nsx q[1];\nrz(-0.25) q[1];\ncz q[0],q[2];\nrz(-1.5707963267948974) q[2];\nsx q[2];\nrz(-2.6915926535897929) q[2];\nsx q[2];\nrz(-1.5707963267948966) q[2];\ncz q[0],q[2];\nrz(-3.1415926535897931) q[0];\nsx q[0];\nrz(1.5707963267948966) q[0];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\n"
+        },
+        {
+          "group_id": "g4",
+          "logical_to_physical": {
+            "0": 123,
+            "1": 122,
+            "2": 136,
+            "3": 143
+          },
+          "observables": [
+            "YYYY"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[4];\ncreg c[4];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nx q[0];\ncz q[0],q[1];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(-2.5415926535897935) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\ncz q[0],q[1];\nsx q[1];\nrz(-0.25) q[1];\nx q[2];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(-2.6415926535897931) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[0],q[2];\nrz(-1.5707963267948974) q[2];\nsx q[2];\nrz(-2.6915926535897929) q[2];\nsx q[2];\nrz(-1.5707963267948966) q[2];\ncz q[0],q[2];\nrz(-3.1415926535897931) q[0];\nsx q[0];\nrz(1.5707963267948966) q[0];\nsx q[2];\nsx q[3];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\n"
+        }
+      ],
+      "n_qubits": 4,
+      "primary_name": "energy",
+      "recorded_primary": -1.1064861688592664,
+      "terms": [
+        {
+          "coefficient": -0.22575348784816623,
+          "pauli": "IIIZ"
+        },
+        {
+          "coefficient": 0.17218393302860957,
+          "pauli": "IIZI"
+        },
+        {
+          "coefficient": 0.12091263250339174,
+          "pauli": "IIZZ"
+        },
+        {
+          "coefficient": -0.22575348784816623,
+          "pauli": "IZII"
+        },
+        {
+          "coefficient": 0.17464342983154577,
+          "pauli": "IZIZ"
+        },
+        {
+          "coefficient": 0.16614543228746337,
+          "pauli": "IZZI"
+        },
+        {
+          "coefficient": 0.04523279978407166,
+          "pauli": "XXXX"
+        },
+        {
+          "coefficient": 0.04523279978407166,
+          "pauli": "XXYY"
+        },
+        {
+          "coefficient": 0.04523279978407166,
+          "pauli": "YYXX"
+        },
+        {
+          "coefficient": 0.04523279978407166,
+          "pauli": "YYYY"
+        },
+        {
+          "coefficient": 0.17218393302860957,
+          "pauli": "ZIII"
+        },
+        {
+          "coefficient": 0.16614543228746337,
+          "pauli": "ZIIZ"
+        },
+        {
+          "coefficient": 0.16892753905660612,
+          "pauli": "ZIZI"
+        },
+        {
+          "coefficient": 0.12091263250339174,
+          "pauli": "ZZII"
+        }
+      ]
+    },
+    {
+      "case_id": "h2_sto3g_trial_03",
+      "cohort": "main_25",
+      "constant": -0.09057899440489847,
+      "family_id": "vqe_molecular",
+      "formula": "weighted_pauli",
+      "measurement_groups": [
+        {
+          "group_id": "g0",
+          "logical_to_physical": {
+            "0": 123,
+            "1": 122,
+            "2": 136,
+            "3": 143
+          },
+          "observables": [
+            "IIIZ",
+            "IIZI",
+            "IIZZ",
+            "IZII",
+            "IZIZ",
+            "IZZI",
+            "ZIII",
+            "ZIIZ",
+            "ZIZI",
+            "ZZII"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[4];\ncreg c[4];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nx q[0];\ncz q[0],q[1];\nrz(-1.5707963267948968) q[1];\nsx q[1];\nrz(-2.5915926535897924) q[1];\nsx q[1];\nrz(-1.5707963267948966) q[1];\ncz q[0],q[1];\nsx q[1];\nrz(2.2707963267948967) q[1];\nsx q[1];\nx q[2];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(-2.3415926535897933) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[0],q[2];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(-2.7915926535897935) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[0],q[2];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\n"
+        },
+        {
+          "group_id": "g1",
+          "logical_to_physical": {
+            "0": 123,
+            "1": 122,
+            "2": 136,
+            "3": 143
+          },
+          "observables": [
+            "XXXX"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[4];\ncreg c[4];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nx q[0];\ncz q[0],q[1];\nrz(-1.5707963267948968) q[1];\nsx q[1];\nrz(-2.5915926535897924) q[1];\nsx q[1];\nrz(-1.5707963267948966) q[1];\ncz q[0],q[1];\nrz(-3.1415926535897931) q[1];\nsx q[1];\nrz(2.4415926535897929) q[1];\nsx q[1];\nx q[2];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(-2.3415926535897933) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[0],q[2];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(-2.7915926535897935) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[0],q[2];\nrz(1.5707963267948966) q[0];\nsx q[0];\nrz(1.5707963267948966) q[0];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\n"
+        },
+        {
+          "group_id": "g2",
+          "logical_to_physical": {
+            "0": 123,
+            "1": 122,
+            "2": 136,
+            "3": 143
+          },
+          "observables": [
+            "XXYY"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[4];\ncreg c[4];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nx q[0];\ncz q[0],q[1];\nrz(-1.5707963267948968) q[1];\nsx q[1];\nrz(-2.5915926535897924) q[1];\nsx q[1];\nrz(-1.5707963267948966) q[1];\ncz q[0],q[1];\nrz(-3.1415926535897931) q[1];\nsx q[1];\nrz(2.4415926535897929) q[1];\nsx q[1];\nx q[2];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(-2.3415926535897933) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[0],q[2];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(-2.7915926535897935) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[0],q[2];\nrz(1.5707963267948966) q[0];\nsx q[0];\nrz(1.5707963267948966) q[0];\nsx q[2];\nsx q[3];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\n"
+        },
+        {
+          "group_id": "g3",
+          "logical_to_physical": {
+            "0": 143,
+            "1": 142,
+            "2": 136,
+            "3": 123
+          },
+          "observables": [
+            "YYXX"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[4];\ncreg c[4];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\nx q[2];\ncz q[2],q[3];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(-2.3415926535897933) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nx q[0];\ncz q[0],q[1];\nrz(-1.5707963267948968) q[1];\nsx q[1];\nrz(-2.5915926535897924) q[1];\nsx q[1];\nrz(-1.5707963267948966) q[1];\ncz q[0],q[1];\nsx q[1];\nrz(0.70000000000000018) q[1];\ncz q[0],q[2];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(-2.7915926535897935) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[0],q[2];\nrz(-3.1415926535897931) q[0];\nsx q[0];\nrz(1.5707963267948966) q[0];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\n"
+        },
+        {
+          "group_id": "g4",
+          "logical_to_physical": {
+            "0": 123,
+            "1": 122,
+            "2": 136,
+            "3": 143
+          },
+          "observables": [
+            "YYYY"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[4];\ncreg c[4];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nx q[0];\ncz q[0],q[1];\nrz(-1.5707963267948968) q[1];\nsx q[1];\nrz(-2.5915926535897924) q[1];\nsx q[1];\nrz(-1.5707963267948966) q[1];\ncz q[0],q[1];\nsx q[1];\nrz(0.70000000000000018) q[1];\nx q[2];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(-2.3415926535897933) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[0],q[2];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(-2.7915926535897935) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[0],q[2];\nrz(-3.1415926535897931) q[0];\nsx q[0];\nrz(1.5707963267948966) q[0];\nsx q[2];\nsx q[3];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\n"
+        }
+      ],
+      "n_qubits": 4,
+      "primary_name": "energy",
+      "recorded_primary": -1.0374761207624918,
+      "terms": [
+        {
+          "coefficient": -0.22575348784816623,
+          "pauli": "IIIZ"
+        },
+        {
+          "coefficient": 0.17218393302860957,
+          "pauli": "IIZI"
+        },
+        {
+          "coefficient": 0.12091263250339174,
+          "pauli": "IIZZ"
+        },
+        {
+          "coefficient": -0.22575348784816623,
+          "pauli": "IZII"
+        },
+        {
+          "coefficient": 0.17464342983154577,
+          "pauli": "IZIZ"
+        },
+        {
+          "coefficient": 0.16614543228746337,
+          "pauli": "IZZI"
+        },
+        {
+          "coefficient": 0.04523279978407166,
+          "pauli": "XXXX"
+        },
+        {
+          "coefficient": 0.04523279978407166,
+          "pauli": "XXYY"
+        },
+        {
+          "coefficient": 0.04523279978407166,
+          "pauli": "YYXX"
+        },
+        {
+          "coefficient": 0.04523279978407166,
+          "pauli": "YYYY"
+        },
+        {
+          "coefficient": 0.17218393302860957,
+          "pauli": "ZIII"
+        },
+        {
+          "coefficient": 0.16614543228746337,
+          "pauli": "ZIIZ"
+        },
+        {
+          "coefficient": 0.16892753905660612,
+          "pauli": "ZIZI"
+        },
+        {
+          "coefficient": 0.12091263250339174,
+          "pauli": "ZZII"
+        }
+      ]
+    },
+    {
+      "case_id": "h2_sto3g_trial_04",
+      "cohort": "main_25",
+      "constant": -0.09057899440489847,
+      "family_id": "vqe_molecular",
+      "formula": "weighted_pauli",
+      "measurement_groups": [
+        {
+          "group_id": "g0",
+          "logical_to_physical": {
+            "0": 123,
+            "1": 122,
+            "2": 136,
+            "3": 143
+          },
+          "observables": [
+            "IIIZ",
+            "IIZI",
+            "IIZZ",
+            "IZII",
+            "IZIZ",
+            "IZZI",
+            "ZIII",
+            "ZIIZ",
+            "ZIZI",
+            "ZZII"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[4];\ncreg c[4];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nx q[0];\ncz q[0],q[1];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(-2.1415926535897931) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\ncz q[0],q[1];\nsx q[1];\nrz(1.3707963267948964) q[1];\nsx q[1];\nx q[2];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(-1.5707963267948968) q[3];\nsx q[3];\nrz(-2.4915926535897928) q[3];\nsx q[3];\nrz(-1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[0],q[2];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(-2.2415926535897936) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[0],q[2];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\n"
+        },
+        {
+          "group_id": "g1",
+          "logical_to_physical": {
+            "0": 123,
+            "1": 122,
+            "2": 136,
+            "3": 143
+          },
+          "observables": [
+            "XXXX"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[4];\ncreg c[4];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nx q[0];\ncz q[0],q[1];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(-2.1415926535897931) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\ncz q[0],q[1];\nsx q[1];\nrz(2.9415926535897929) q[1];\nsx q[1];\nrz(-3.1415926535897931) q[1];\nx q[2];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(-1.5707963267948968) q[3];\nsx q[3];\nrz(-2.4915926535897928) q[3];\nsx q[3];\nrz(-1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[0],q[2];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(-2.2415926535897936) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[0],q[2];\nrz(1.5707963267948966) q[0];\nsx q[0];\nrz(1.5707963267948966) q[0];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\n"
+        },
+        {
+          "group_id": "g2",
+          "logical_to_physical": {
+            "0": 123,
+            "1": 122,
+            "2": 136,
+            "3": 143
+          },
+          "observables": [
+            "XXYY"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[4];\ncreg c[4];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nx q[0];\ncz q[0],q[1];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(-2.1415926535897931) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\ncz q[0],q[1];\nsx q[1];\nrz(2.9415926535897929) q[1];\nsx q[1];\nrz(-3.1415926535897931) q[1];\nx q[2];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(-1.5707963267948968) q[3];\nsx q[3];\nrz(-2.4915926535897928) q[3];\nsx q[3];\nrz(-1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[0],q[2];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(-2.2415926535897936) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[0],q[2];\nrz(1.5707963267948966) q[0];\nsx q[0];\nrz(1.5707963267948966) q[0];\nsx q[2];\nsx q[3];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\n"
+        },
+        {
+          "group_id": "g3",
+          "logical_to_physical": {
+            "0": 143,
+            "1": 142,
+            "2": 136,
+            "3": 123
+          },
+          "observables": [
+            "YYXX"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[4];\ncreg c[4];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\nx q[2];\ncz q[2],q[3];\nrz(-1.5707963267948968) q[3];\nsx q[3];\nrz(-2.4915926535897928) q[3];\nsx q[3];\nrz(-1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nx q[0];\ncz q[0],q[1];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(-2.1415926535897931) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\ncz q[0],q[1];\nsx q[1];\nrz(-0.20000000000000018) q[1];\ncz q[0],q[2];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(-2.2415926535897936) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[0],q[2];\nrz(-3.1415926535897931) q[0];\nsx q[0];\nrz(1.5707963267948966) q[0];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\n"
+        },
+        {
+          "group_id": "g4",
+          "logical_to_physical": {
+            "0": 123,
+            "1": 122,
+            "2": 136,
+            "3": 143
+          },
+          "observables": [
+            "YYYY"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[4];\ncreg c[4];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nx q[0];\ncz q[0],q[1];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(-2.1415926535897931) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\ncz q[0],q[1];\nsx q[1];\nrz(-0.20000000000000018) q[1];\nx q[2];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(-1.5707963267948968) q[3];\nsx q[3];\nrz(-2.4915926535897928) q[3];\nsx q[3];\nrz(-1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[0],q[2];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(-2.2415926535897936) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[0],q[2];\nrz(-3.1415926535897931) q[0];\nsx q[0];\nrz(1.5707963267948966) q[0];\nsx q[2];\nsx q[3];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\n"
+        }
+      ],
+      "n_qubits": 4,
+      "primary_name": "energy",
+      "recorded_primary": -1.110258148899452,
+      "terms": [
+        {
+          "coefficient": -0.22575348784816623,
+          "pauli": "IIIZ"
+        },
+        {
+          "coefficient": 0.17218393302860957,
+          "pauli": "IIZI"
+        },
+        {
+          "coefficient": 0.12091263250339174,
+          "pauli": "IIZZ"
+        },
+        {
+          "coefficient": -0.22575348784816623,
+          "pauli": "IZII"
+        },
+        {
+          "coefficient": 0.17464342983154577,
+          "pauli": "IZIZ"
+        },
+        {
+          "coefficient": 0.16614543228746337,
+          "pauli": "IZZI"
+        },
+        {
+          "coefficient": 0.04523279978407166,
+          "pauli": "XXXX"
+        },
+        {
+          "coefficient": 0.04523279978407166,
+          "pauli": "XXYY"
+        },
+        {
+          "coefficient": 0.04523279978407166,
+          "pauli": "YYXX"
+        },
+        {
+          "coefficient": 0.04523279978407166,
+          "pauli": "YYYY"
+        },
+        {
+          "coefficient": 0.17218393302860957,
+          "pauli": "ZIII"
+        },
+        {
+          "coefficient": 0.16614543228746337,
+          "pauli": "ZIIZ"
+        },
+        {
+          "coefficient": 0.16892753905660612,
+          "pauli": "ZIZI"
+        },
+        {
+          "coefficient": 0.12091263250339174,
+          "pauli": "ZZII"
+        }
+      ]
+    },
+    {
+      "case_id": "h2_sto3g_trial_05",
+      "cohort": "main_25",
+      "constant": -0.09057899440489847,
+      "family_id": "vqe_molecular",
+      "formula": "weighted_pauli",
+      "measurement_groups": [
+        {
+          "group_id": "g0",
+          "logical_to_physical": {
+            "0": 123,
+            "1": 122,
+            "2": 136,
+            "3": 143
+          },
+          "observables": [
+            "IIIZ",
+            "IIZI",
+            "IIZZ",
+            "IZII",
+            "IZIZ",
+            "IZZI",
+            "ZIII",
+            "ZIIZ",
+            "ZIZI",
+            "ZZII"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[4];\ncreg c[4];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nx q[0];\ncz q[0],q[1];\nrz(1.5707963267948974) q[1];\nsx q[1];\nrz(-2.9915926535897936) q[1];\nsx q[1];\nrz(1.5707963267948957) q[1];\ncz q[0],q[1];\nsx q[1];\nrz(1.1207963267948964) q[1];\nsx q[1];\nx q[2];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948957) q[3];\nsx q[3];\nrz(-2.8915926535897931) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[0],q[2];\nrz(-1.570796326794897) q[2];\nsx q[2];\nrz(-2.7915926535897926) q[2];\nsx q[2];\nrz(-1.5707963267948966) q[2];\ncz q[0],q[2];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\n"
+        },
+        {
+          "group_id": "g1",
+          "logical_to_physical": {
+            "0": 123,
+            "1": 122,
+            "2": 136,
+            "3": 143
+          },
+          "observables": [
+            "XXXX"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[4];\ncreg c[4];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nx q[0];\ncz q[0],q[1];\nrz(1.5707963267948974) q[1];\nsx q[1];\nrz(-2.9915926535897936) q[1];\nsx q[1];\nrz(1.5707963267948957) q[1];\ncz q[0],q[1];\nsx q[1];\nrz(2.6915926535897929) q[1];\nsx q[1];\nrz(-3.1415926535897931) q[1];\nx q[2];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948957) q[3];\nsx q[3];\nrz(-2.8915926535897931) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[0],q[2];\nrz(-1.570796326794897) q[2];\nsx q[2];\nrz(-2.7915926535897926) q[2];\nsx q[2];\nrz(-1.5707963267948966) q[2];\ncz q[0],q[2];\nrz(1.5707963267948966) q[0];\nsx q[0];\nrz(1.5707963267948966) q[0];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\n"
+        },
+        {
+          "group_id": "g2",
+          "logical_to_physical": {
+            "0": 123,
+            "1": 122,
+            "2": 136,
+            "3": 143
+          },
+          "observables": [
+            "XXYY"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[4];\ncreg c[4];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nx q[0];\ncz q[0],q[1];\nrz(1.5707963267948974) q[1];\nsx q[1];\nrz(-2.9915926535897936) q[1];\nsx q[1];\nrz(1.5707963267948957) q[1];\ncz q[0],q[1];\nsx q[1];\nrz(2.6915926535897929) q[1];\nsx q[1];\nrz(-3.1415926535897931) q[1];\nx q[2];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948957) q[3];\nsx q[3];\nrz(-2.8915926535897931) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[0],q[2];\nrz(-1.570796326794897) q[2];\nsx q[2];\nrz(-2.7915926535897926) q[2];\nsx q[2];\nrz(-1.5707963267948966) q[2];\ncz q[0],q[2];\nrz(1.5707963267948966) q[0];\nsx q[0];\nrz(1.5707963267948966) q[0];\nsx q[2];\nsx q[3];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\n"
+        },
+        {
+          "group_id": "g3",
+          "logical_to_physical": {
+            "0": 143,
+            "1": 142,
+            "2": 136,
+            "3": 123
+          },
+          "observables": [
+            "YYXX"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[4];\ncreg c[4];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\nx q[2];\ncz q[2],q[3];\nrz(1.5707963267948957) q[3];\nsx q[3];\nrz(-2.8915926535897931) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nx q[0];\ncz q[0],q[1];\nrz(1.5707963267948974) q[1];\nsx q[1];\nrz(-2.9915926535897936) q[1];\nsx q[1];\nrz(1.5707963267948957) q[1];\ncz q[0],q[1];\nsx q[1];\nrz(-0.45000000000000018) q[1];\ncz q[0],q[2];\nrz(-1.570796326794897) q[2];\nsx q[2];\nrz(-2.7915926535897926) q[2];\nsx q[2];\nrz(-1.5707963267948966) q[2];\ncz q[0],q[2];\nrz(-3.1415926535897931) q[0];\nsx q[0];\nrz(1.5707963267948966) q[0];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\n"
+        },
+        {
+          "group_id": "g4",
+          "logical_to_physical": {
+            "0": 123,
+            "1": 122,
+            "2": 136,
+            "3": 143
+          },
+          "observables": [
+            "YYYY"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[4];\ncreg c[4];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nx q[0];\ncz q[0],q[1];\nrz(1.5707963267948974) q[1];\nsx q[1];\nrz(-2.9915926535897936) q[1];\nsx q[1];\nrz(1.5707963267948957) q[1];\ncz q[0],q[1];\nsx q[1];\nrz(-0.45000000000000018) q[1];\nx q[2];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948957) q[3];\nsx q[3];\nrz(-2.8915926535897931) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[0],q[2];\nrz(-1.570796326794897) q[2];\nsx q[2];\nrz(-2.7915926535897926) q[2];\nsx q[2];\nrz(-1.5707963267948966) q[2];\ncz q[0],q[2];\nrz(-3.1415926535897931) q[0];\nsx q[0];\nrz(1.5707963267948966) q[0];\nsx q[2];\nsx q[3];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\n"
+        }
+      ],
+      "n_qubits": 4,
+      "primary_name": "energy",
+      "recorded_primary": -1.0833333803345684,
+      "terms": [
+        {
+          "coefficient": -0.22575348784816623,
+          "pauli": "IIIZ"
+        },
+        {
+          "coefficient": 0.17218393302860957,
+          "pauli": "IIZI"
+        },
+        {
+          "coefficient": 0.12091263250339174,
+          "pauli": "IIZZ"
+        },
+        {
+          "coefficient": -0.22575348784816623,
+          "pauli": "IZII"
+        },
+        {
+          "coefficient": 0.17464342983154577,
+          "pauli": "IZIZ"
+        },
+        {
+          "coefficient": 0.16614543228746337,
+          "pauli": "IZZI"
+        },
+        {
+          "coefficient": 0.04523279978407166,
+          "pauli": "XXXX"
+        },
+        {
+          "coefficient": 0.04523279978407166,
+          "pauli": "XXYY"
+        },
+        {
+          "coefficient": 0.04523279978407166,
+          "pauli": "YYXX"
+        },
+        {
+          "coefficient": 0.04523279978407166,
+          "pauli": "YYYY"
+        },
+        {
+          "coefficient": 0.17218393302860957,
+          "pauli": "ZIII"
+        },
+        {
+          "coefficient": 0.16614543228746337,
+          "pauli": "ZIIZ"
+        },
+        {
+          "coefficient": 0.16892753905660612,
+          "pauli": "ZIZI"
+        },
+        {
+          "coefficient": 0.12091263250339174,
+          "pauli": "ZZII"
+        }
+      ]
+    },
+    {
+      "case_id": "maxcut_square4_angles_a",
+      "cohort": "main_25",
+      "constant": 2.0,
+      "family_id": "qaoa_maxcut",
+      "formula": "maxcut",
+      "measurement_groups": [
+        {
+          "group_id": "g0",
+          "logical_to_physical": {
+            "0": 136,
+            "1": 123,
+            "2": 142,
+            "3": 143
+          },
+          "observables": [
+            "IIZZ",
+            "IZZI",
+            "ZIIZ",
+            "ZZII"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[4];\ncreg c[4];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\ncz q[1],q[0];\nrz(-1.570796326794897) q[0];\nsx q[0];\nrz(-2.7415926535897928) q[0];\nsx q[0];\nrz(-1.5707963267948966) q[0];\ncz q[1],q[0];\nsx q[1];\nrz(1.5707963267948966) q[0];\nsx q[0];\nrz(1.5707963267948966) q[0];\ncz q[0],q[3];\nrz(-1.570796326794897) q[3];\nsx q[3];\nrz(-2.7415926535897928) q[3];\nsx q[3];\nrz(-1.5707963267948966) q[3];\ncz q[0],q[3];\nrz(1.5707963267948966) q[0];\nsx q[0];\nrz(-0.97079632679489691) q[0];\nsx q[0];\nrz(1.5707963267948966) q[0];\ncz q[0],q[1];\nsx q[1];\nsx q[0];\ncz q[0],q[1];\nsx q[1];\nsx q[0];\ncz q[0],q[1];\nrz(1.5707963267948966) q[0];\nsx q[0];\nrz(1.5707963267948966) q[0];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[3],q[2];\nrz(-1.5707963267948968) q[2];\nsx q[2];\nrz(-2.5415926535897926) q[2];\nsx q[2];\nrz(-1.5707963267948966) q[2];\ncz q[3],q[2];\nrz(-3.1415926535897931) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(-0.97079632679489691) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[3],q[2];\nsx q[2];\nsx q[3];\ncz q[3],q[2];\nsx q[2];\nsx q[3];\ncz q[3],q[2];\ncz q[3],q[0];\nrz(-1.5707963267948974) q[0];\nsx q[0];\nrz(-2.9415926535897921) q[0];\nsx q[0];\nrz(-1.5707963267948966) q[0];\ncz q[3],q[0];\nrz(2.1707963267948962) q[0];\nsx q[0];\nrz(1.5707963267948957) q[0];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(3.7415926535897932) q[3];\nsx q[3];\nrz(7.8539816339744828) q[3];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\n"
+        }
+      ],
+      "n_qubits": 4,
+      "primary_name": "mean_cut_weight",
+      "recorded_primary": 2.7465811574351293,
+      "terms": [
+        {
+          "coefficient": -0.5,
+          "pauli": "ZZII"
+        },
+        {
+          "coefficient": -0.5,
+          "pauli": "IZZI"
+        },
+        {
+          "coefficient": -0.75,
+          "pauli": "IIZZ"
+        },
+        {
+          "coefficient": -0.25,
+          "pauli": "ZIIZ"
+        }
+      ]
+    },
+    {
+      "case_id": "maxcut_square4_angles_b",
+      "cohort": "main_25",
+      "constant": 2.0,
+      "family_id": "qaoa_maxcut",
+      "formula": "maxcut",
+      "measurement_groups": [
+        {
+          "group_id": "g0",
+          "logical_to_physical": {
+            "0": 136,
+            "1": 123,
+            "2": 142,
+            "3": 143
+          },
+          "observables": [
+            "IIZZ",
+            "IZZI",
+            "ZIIZ",
+            "ZZII"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[4];\ncreg c[4];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\ncz q[1],q[0];\nrz(-1.5707963267948968) q[0];\nsx q[0];\nrz(-2.2415926535897928) q[0];\nsx q[0];\nrz(-1.5707963267948966) q[0];\ncz q[1],q[0];\nsx q[1];\nrz(1.5707963267948966) q[0];\nsx q[0];\nrz(1.5707963267948966) q[0];\ncz q[0],q[3];\nrz(-1.5707963267948968) q[3];\nsx q[3];\nrz(-2.2415926535897928) q[3];\nsx q[3];\nrz(-1.5707963267948966) q[3];\ncz q[0],q[3];\nrz(-1.5707963267948961) q[0];\nsx q[0];\nrz(-0.62920367320510273) q[0];\nsx q[0];\nrz(-1.5707963267948966) q[0];\ncz q[0],q[1];\nsx q[1];\nsx q[0];\ncz q[0],q[1];\nsx q[1];\nsx q[0];\ncz q[0],q[1];\nrz(1.5707963267948966) q[0];\nsx q[0];\nrz(1.5707963267948966) q[0];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[3],q[2];\nrz(-1.5707963267948966) q[2];\nsx q[2];\nrz(-1.7915926535897926) q[2];\nsx q[2];\nrz(-1.5707963267948966) q[2];\ncz q[3],q[2];\nrz(-3.1415926535897931) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\nrz(-1.5707963267948961) q[3];\nsx q[3];\nrz(-0.62920367320510273) q[3];\nsx q[3];\nrz(-1.5707963267948966) q[3];\ncz q[3],q[2];\nsx q[2];\nsx q[3];\ncz q[3],q[2];\nsx q[2];\nsx q[3];\ncz q[3],q[2];\ncz q[3],q[0];\nrz(-1.5707963267948974) q[0];\nsx q[0];\nrz(-2.6915926535897929) q[0];\nsx q[0];\nrz(-1.5707963267948966) q[0];\ncz q[3],q[0];\nrz(-2.5123889803846904) q[0];\nsx q[0];\nrz(1.5707963267948966) q[0];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(5.3415926535897933) q[3];\nsx q[3];\nrz(7.8539816339744828) q[3];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\n"
+        }
+      ],
+      "n_qubits": 4,
+      "primary_name": "mean_cut_weight",
+      "recorded_primary": 0.9862522446729465,
+      "terms": [
+        {
+          "coefficient": -0.5,
+          "pauli": "ZZII"
+        },
+        {
+          "coefficient": -0.5,
+          "pauli": "IZZI"
+        },
+        {
+          "coefficient": -0.75,
+          "pauli": "IIZZ"
+        },
+        {
+          "coefficient": -0.25,
+          "pauli": "ZIIZ"
+        }
+      ]
+    },
+    {
+      "case_id": "maxcut_path6_angles_a",
+      "cohort": "main_25",
+      "constant": 2.4,
+      "family_id": "qaoa_maxcut",
+      "formula": "maxcut",
+      "measurement_groups": [
+        {
+          "group_id": "g0",
+          "logical_to_physical": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5
+          },
+          "observables": [
+            "IIIIZZ",
+            "IIIZZI",
+            "IIZZII",
+            "IZZIII",
+            "ZZIIII"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[6];\ncreg c[6];\nrz(1.5707963267948966) q[0];\nsx q[0];\nrz(1.5707963267948966) q[0];\ncz q[0],q[1];\nrz(-1.5707963267948961) q[1];\nsx q[1];\nrz(-2.8915926535897931) q[1];\nsx q[1];\nrz(-1.5707963267948974) q[1];\ncz q[0],q[1];\nrz(1.5707963267948966) q[0];\nsx q[0];\nrz(4.3415926535897933) q[0];\nsx q[0];\nrz(7.8539816339744828) q[0];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\ncz q[1],q[2];\nrz(-1.5707963267948974) q[2];\nsx q[2];\nrz(-2.9415926535897921) q[2];\nsx q[2];\nrz(-1.5707963267948966) q[2];\ncz q[1],q[2];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(4.3415926535897933) q[1];\nsx q[1];\nrz(7.8539816339744828) q[1];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[2],q[3];\nrz(-1.5707963267948968) q[3];\nsx q[3];\nrz(-2.8415926535897924) q[3];\nsx q[3];\nrz(-1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(4.3415926535897933) q[2];\nsx q[2];\nrz(7.8539816339744828) q[2];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[3],q[4];\nrz(-1.5707963267948968) q[4];\nsx q[4];\nrz(-2.9665926535897924) q[4];\nsx q[4];\nrz(-1.5707963267948966) q[4];\ncz q[3],q[4];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(4.3415926535897933) q[3];\nsx q[3];\nrz(7.8539816339744828) q[3];\nrz(1.5707963267948966) q[4];\nsx q[4];\nrz(1.5707963267948966) q[4];\ncz q[4],q[5];\nrz(-1.5707963267948979) q[5];\nsx q[5];\nrz(-2.8665926535897928) q[5];\nsx q[5];\nrz(-1.5707963267948957) q[5];\ncz q[4],q[5];\nrz(1.5707963267948966) q[4];\nsx q[4];\nrz(4.3415926535897933) q[4];\nsx q[4];\nrz(7.8539816339744828) q[4];\nrz(2.7707963267948958) q[5];\nsx q[5];\nrz(1.5707963267948966) q[5];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\nmeasure q[4] -> c[4];\nmeasure q[5] -> c[5];\n"
+        }
+      ],
+      "n_qubits": 6,
+      "primary_name": "mean_cut_weight",
+      "recorded_primary": 2.7916066317792825,
+      "terms": [
+        {
+          "coefficient": -0.5,
+          "pauli": "ZZIIII"
+        },
+        {
+          "coefficient": -0.4,
+          "pauli": "IZZIII"
+        },
+        {
+          "coefficient": -0.6,
+          "pauli": "IIZZII"
+        },
+        {
+          "coefficient": -0.35,
+          "pauli": "IIIZZI"
+        },
+        {
+          "coefficient": -0.55,
+          "pauli": "IIIIZZ"
+        }
+      ]
+    },
+    {
+      "case_id": "maxcut_path6_angles_b",
+      "cohort": "main_25",
+      "constant": 2.4,
+      "family_id": "qaoa_maxcut",
+      "formula": "maxcut",
+      "measurement_groups": [
+        {
+          "group_id": "g0",
+          "logical_to_physical": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5
+          },
+          "observables": [
+            "IIIIZZ",
+            "IIIZZI",
+            "IIZZII",
+            "IZZIII",
+            "ZZIIII"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[6];\ncreg c[6];\nrz(1.5707963267948966) q[0];\nsx q[0];\nrz(1.5707963267948966) q[0];\ncz q[0],q[1];\nrz(-1.570796326794897) q[1];\nsx q[1];\nrz(-2.4415926535897929) q[1];\nsx q[1];\nrz(-1.5707963267948966) q[1];\ncz q[0],q[1];\nrz(1.5707963267948966) q[0];\nsx q[0];\nrz(3.541592653589793) q[0];\nsx q[0];\nrz(7.8539816339744828) q[0];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\ncz q[1],q[2];\nrz(-1.5707963267948968) q[2];\nsx q[2];\nrz(-2.5815926535897926) q[2];\nsx q[2];\nrz(-1.5707963267948966) q[2];\ncz q[1],q[2];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(3.541592653589793) q[1];\nsx q[1];\nrz(7.8539816339744828) q[1];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[2],q[3];\nrz(-1.570796326794897) q[3];\nsx q[3];\nrz(-2.3015926535897933) q[3];\nsx q[3];\nrz(-1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(3.541592653589793) q[2];\nsx q[2];\nrz(7.8539816339744828) q[2];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[3],q[4];\nrz(-1.5707963267948974) q[4];\nsx q[4];\nrz(-2.6515926535897929) q[4];\nsx q[4];\nrz(-1.5707963267948966) q[4];\ncz q[3],q[4];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(3.541592653589793) q[3];\nsx q[3];\nrz(7.8539816339744828) q[3];\nrz(1.5707963267948966) q[4];\nsx q[4];\nrz(1.5707963267948966) q[4];\ncz q[4],q[5];\nrz(-1.570796326794897) q[5];\nsx q[5];\nrz(-2.3715926535897927) q[5];\nsx q[5];\nrz(-1.5707963267948966) q[5];\ncz q[4],q[5];\nrz(1.5707963267948966) q[4];\nsx q[4];\nrz(3.541592653589793) q[4];\nsx q[4];\nrz(7.8539816339744828) q[4];\nrz(1.970796326794896) q[5];\nsx q[5];\nrz(1.5707963267948957) q[5];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\nmeasure q[4] -> c[4];\nmeasure q[5] -> c[5];\n"
+        }
+      ],
+      "n_qubits": 6,
+      "primary_name": "mean_cut_weight",
+      "recorded_primary": 3.3400935029648986,
+      "terms": [
+        {
+          "coefficient": -0.5,
+          "pauli": "ZZIIII"
+        },
+        {
+          "coefficient": -0.4,
+          "pauli": "IZZIII"
+        },
+        {
+          "coefficient": -0.6,
+          "pauli": "IIZZII"
+        },
+        {
+          "coefficient": -0.35,
+          "pauli": "IIIZZI"
+        },
+        {
+          "coefficient": -0.55,
+          "pauli": "IIIIZZ"
+        }
+      ]
+    },
+    {
+      "case_id": "maxcut_cycle8_angles_a",
+      "cohort": "examined_5",
+      "constant": 3.6,
+      "family_id": "qaoa_maxcut",
+      "formula": "maxcut",
+      "measurement_groups": [
+        {
+          "group_id": "g0",
+          "logical_to_physical": {
+            "0": 124,
+            "1": 137,
+            "10": 127,
+            "11": 136,
+            "2": 147,
+            "3": 146,
+            "4": 145,
+            "5": 144,
+            "6": 143,
+            "7": 123,
+            "8": 125,
+            "9": 126
+          },
+          "observables": [
+            "IIIIIIZZ",
+            "IIIIIZZI",
+            "IIIIZZII",
+            "IIIZZIII",
+            "IIZZIIII",
+            "IZZIIIII",
+            "ZIIIIIIZ",
+            "ZZIIIIII"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[12];\ncreg c[12];\nsx q[7];\nsx q[0];\nsx q[8];\nsx q[9];\nrz(1.5707963267948966) q[10];\nsx q[10];\nrz(1.5707963267948966) q[10];\ncz q[10],q[1];\nrz(-1.570796326794897) q[1];\nsx q[1];\nrz(-2.6415926535897931) q[1];\nsx q[1];\nrz(-1.5707963267948966) q[1];\ncz q[10],q[1];\nsx q[10];\ncz q[9],q[10];\nsx q[9];\nsx q[10];\ncz q[9],q[10];\nsx q[9];\nsx q[10];\ncz q[9],q[10];\nsx q[9];\ncz q[8],q[9];\nsx q[8];\nsx q[9];\ncz q[8],q[9];\nsx q[8];\nsx q[9];\ncz q[8],q[9];\nsx q[8];\ncz q[0],q[8];\nsx q[0];\nsx q[8];\ncz q[0],q[8];\nsx q[0];\nsx q[8];\ncz q[0],q[8];\nrz(1.5707963267948966) q[0];\nsx q[0];\nrz(1.5707963267948966) q[0];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\ncz q[1],q[2];\nrz(-1.5707963267948968) q[2];\nsx q[2];\nrz(-2.8415926535897924) q[2];\nsx q[2];\nrz(-1.5707963267948966) q[2];\ncz q[1],q[2];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(4.7415926535897928) q[1];\nsx q[1];\nrz(7.8539816339744828) q[1];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[2],q[3];\nrz(-1.570796326794897) q[3];\nsx q[3];\nrz(-2.6415926535897931) q[3];\nsx q[3];\nrz(-1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[3],q[4];\nrz(-1.5707963267948968) q[4];\nsx q[4];\nrz(-2.8415926535897924) q[4];\nsx q[4];\nrz(-1.5707963267948966) q[4];\ncz q[3],q[4];\nrz(1.5707963267948966) q[4];\nsx q[4];\nrz(1.5707963267948966) q[4];\ncz q[4],q[5];\nrz(-1.570796326794897) q[5];\nsx q[5];\nrz(-2.6415926535897931) q[5];\nsx q[5];\nrz(-1.5707963267948966) q[5];\ncz q[4],q[5];\nrz(1.5707963267948966) q[5];\nsx q[5];\nrz(1.5707963267948966) q[5];\ncz q[5],q[6];\nrz(-1.5707963267948968) q[6];\nsx q[6];\nrz(-2.8415926535897924) q[6];\nsx q[6];\nrz(-1.5707963267948966) q[6];\ncz q[5],q[6];\nrz(1.5707963267948966) q[6];\nsx q[6];\nrz(1.5707963267948966) q[6];\ncz q[6],q[11];\nrz(-1.570796326794897) q[11];\nsx q[11];\nrz(-2.6415926535897931) q[11];\nsx q[11];\nrz(-1.5707963267948966) q[11];\ncz q[6],q[11];\nrz(-3.1415926535897931) q[11];\nsx q[11];\nrz(1.5707963267948966) q[11];\ncz q[7],q[11];\nsx q[7];\nsx q[11];\ncz q[7],q[11];\nsx q[7];\nsx q[11];\ncz q[7],q[11];\ncz q[7],q[0];\nrz(-1.570796326794897) q[0];\nsx q[0];\nrz(-2.4415926535897929) q[0];\nsx q[0];\nrz(-1.5707963267948966) q[0];\ncz q[7],q[0];\nrz(1.5707963267948966) q[7];\nsx q[7];\nrz(4.7415926535897928) q[7];\nsx q[7];\nrz(7.8539816339744828) q[7];\nrz(-3.1123889803846909) q[0];\nsx q[0];\nrz(1.5707963267948966) q[0];\nrz(1.5707963267948966) q[6];\nsx q[6];\nrz(4.7415926535897928) q[6];\nsx q[6];\nrz(7.8539816339744828) q[6];\nrz(1.5707963267948966) q[5];\nsx q[5];\nrz(4.7415926535897928) q[5];\nsx q[5];\nrz(7.8539816339744828) q[5];\nrz(1.5707963267948966) q[4];\nsx q[4];\nrz(4.7415926535897928) q[4];\nsx q[4];\nrz(7.8539816339744828) q[4];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(4.7415926535897928) q[3];\nsx q[3];\nrz(7.8539816339744828) q[3];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(4.7415926535897928) q[2];\nsx q[2];\nrz(7.8539816339744828) q[2];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\nmeasure q[4] -> c[4];\nmeasure q[5] -> c[5];\nmeasure q[6] -> c[6];\nmeasure q[7] -> c[7];\n"
+        }
+      ],
+      "n_qubits": 8,
+      "primary_name": "mean_cut_weight",
+      "recorded_primary": 3.5124668924186064,
+      "terms": [
+        {
+          "coefficient": -0.5,
+          "pauli": "ZZIIIIII"
+        },
+        {
+          "coefficient": -0.3,
+          "pauli": "IZZIIIII"
+        },
+        {
+          "coefficient": -0.5,
+          "pauli": "IIZZIIII"
+        },
+        {
+          "coefficient": -0.3,
+          "pauli": "IIIZZIII"
+        },
+        {
+          "coefficient": -0.5,
+          "pauli": "IIIIZZII"
+        },
+        {
+          "coefficient": -0.3,
+          "pauli": "IIIIIZZI"
+        },
+        {
+          "coefficient": -0.5,
+          "pauli": "IIIIIIZZ"
+        },
+        {
+          "coefficient": -0.7,
+          "pauli": "ZIIIIIIZ"
+        }
+      ]
+    },
+    {
+      "case_id": "maxcut_cycle8_angles_b",
+      "cohort": "main_25",
+      "constant": 3.6,
+      "family_id": "qaoa_maxcut",
+      "formula": "maxcut",
+      "measurement_groups": [
+        {
+          "group_id": "g0",
+          "logical_to_physical": {
+            "0": 124,
+            "1": 137,
+            "10": 127,
+            "11": 136,
+            "2": 147,
+            "3": 146,
+            "4": 145,
+            "5": 144,
+            "6": 143,
+            "7": 123,
+            "8": 125,
+            "9": 126
+          },
+          "observables": [
+            "IIIIIIZZ",
+            "IIIIIZZI",
+            "IIIIZZII",
+            "IIIZZIII",
+            "IIZZIIII",
+            "IZZIIIII",
+            "ZIIIIIIZ",
+            "ZZIIIIII"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[12];\ncreg c[12];\nsx q[7];\nsx q[0];\nsx q[8];\nsx q[9];\nrz(1.5707963267948966) q[10];\nsx q[10];\nrz(1.5707963267948966) q[10];\ncz q[10],q[1];\nrz(-1.5707963267948968) q[1];\nsx q[1];\nrz(-1.9415926535897929) q[1];\nsx q[1];\nrz(-1.5707963267948966) q[1];\ncz q[10],q[1];\nsx q[10];\ncz q[9],q[10];\nsx q[9];\nsx q[10];\ncz q[9],q[10];\nsx q[9];\nsx q[10];\ncz q[9],q[10];\nsx q[9];\ncz q[8],q[9];\nsx q[8];\nsx q[9];\ncz q[8],q[9];\nsx q[8];\nsx q[9];\ncz q[8],q[9];\nsx q[8];\ncz q[0],q[8];\nsx q[0];\nsx q[8];\ncz q[0],q[8];\nsx q[0];\nsx q[8];\ncz q[0],q[8];\nrz(1.5707963267948966) q[0];\nsx q[0];\nrz(1.5707963267948966) q[0];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\ncz q[1],q[2];\nrz(-1.570796326794897) q[2];\nsx q[2];\nrz(-2.4215926535897925) q[2];\nsx q[2];\nrz(-1.5707963267948966) q[2];\ncz q[1],q[2];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(3.9415926535897929) q[1];\nsx q[1];\nrz(7.8539816339744828) q[1];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[2],q[3];\nrz(-1.5707963267948968) q[3];\nsx q[3];\nrz(-1.9415926535897929) q[3];\nsx q[3];\nrz(-1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[3],q[4];\nrz(-1.570796326794897) q[4];\nsx q[4];\nrz(-2.4215926535897925) q[4];\nsx q[4];\nrz(-1.5707963267948966) q[4];\ncz q[3],q[4];\nrz(1.5707963267948966) q[4];\nsx q[4];\nrz(1.5707963267948966) q[4];\ncz q[4],q[5];\nrz(-1.5707963267948968) q[5];\nsx q[5];\nrz(-1.9415926535897929) q[5];\nsx q[5];\nrz(-1.5707963267948966) q[5];\ncz q[4],q[5];\nrz(1.5707963267948966) q[5];\nsx q[5];\nrz(1.5707963267948966) q[5];\ncz q[5],q[6];\nrz(-1.570796326794897) q[6];\nsx q[6];\nrz(-2.4215926535897925) q[6];\nsx q[6];\nrz(-1.5707963267948966) q[6];\ncz q[5],q[6];\nrz(1.5707963267948966) q[6];\nsx q[6];\nrz(1.5707963267948966) q[6];\ncz q[6],q[11];\nrz(-1.5707963267948968) q[11];\nsx q[11];\nrz(-1.9415926535897929) q[11];\nsx q[11];\nrz(-1.5707963267948966) q[11];\ncz q[6],q[11];\nrz(-3.1415926535897931) q[11];\nsx q[11];\nrz(1.5707963267948966) q[11];\ncz q[7],q[11];\nsx q[7];\nsx q[11];\ncz q[7],q[11];\nsx q[7];\nsx q[11];\ncz q[7],q[11];\ncz q[7],q[0];\nrz(-1.5707963267948968) q[0];\nsx q[0];\nrz(-1.4615926535897934) q[0];\nsx q[0];\nrz(-1.5707963267948966) q[0];\ncz q[7],q[0];\nrz(1.5707963267948966) q[7];\nsx q[7];\nrz(3.9415926535897929) q[7];\nsx q[7];\nrz(7.8539816339744828) q[7];\nrz(2.3707963267948955) q[0];\nsx q[0];\nrz(1.5707963267948957) q[0];\nrz(1.5707963267948966) q[6];\nsx q[6];\nrz(3.9415926535897929) q[6];\nsx q[6];\nrz(7.8539816339744828) q[6];\nrz(1.5707963267948966) q[5];\nsx q[5];\nrz(3.9415926535897929) q[5];\nsx q[5];\nrz(7.8539816339744828) q[5];\nrz(1.5707963267948966) q[4];\nsx q[4];\nrz(3.9415926535897929) q[4];\nsx q[4];\nrz(7.8539816339744828) q[4];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(3.9415926535897929) q[3];\nsx q[3];\nrz(7.8539816339744828) q[3];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(3.9415926535897929) q[2];\nsx q[2];\nrz(7.8539816339744828) q[2];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\nmeasure q[4] -> c[4];\nmeasure q[5] -> c[5];\nmeasure q[6] -> c[6];\nmeasure q[7] -> c[7];\n"
+        }
+      ],
+      "n_qubits": 8,
+      "primary_name": "mean_cut_weight",
+      "recorded_primary": 5.066832128872356,
+      "terms": [
+        {
+          "coefficient": -0.5,
+          "pauli": "ZZIIIIII"
+        },
+        {
+          "coefficient": -0.3,
+          "pauli": "IZZIIIII"
+        },
+        {
+          "coefficient": -0.5,
+          "pauli": "IIZZIIII"
+        },
+        {
+          "coefficient": -0.3,
+          "pauli": "IIIZZIII"
+        },
+        {
+          "coefficient": -0.5,
+          "pauli": "IIIIZZII"
+        },
+        {
+          "coefficient": -0.3,
+          "pauli": "IIIIIZZI"
+        },
+        {
+          "coefficient": -0.5,
+          "pauli": "IIIIIIZZ"
+        },
+        {
+          "coefficient": -0.7,
+          "pauli": "ZIIIIIIZ"
+        }
+      ]
+    },
+    {
+      "case_id": "ising_2_mag_step1",
+      "cohort": "main_25",
+      "constant": 0.0,
+      "family_id": "ising_dynamics",
+      "formula": "weighted_pauli",
+      "measurement_groups": [
+        {
+          "group_id": "g0",
+          "logical_to_physical": {
+            "0": 0,
+            "1": 1
+          },
+          "observables": [
+            "IZ",
+            "ZI"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[2];\ncreg c[2];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\ncz q[0],q[1];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(-2.7415926535897936) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\ncz q[0],q[1];\nrz(1.5707963267948966) q[0];\nsx q[0];\nrz(3.3415926535897933) q[0];\nsx q[0];\nrz(7.8539816339744828) q[0];\nrz(1.470796326794896) q[1];\nsx q[1];\nrz(1.5707963267948957) q[1];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\n"
+        }
+      ],
+      "n_qubits": 2,
+      "primary_name": "mean_magnetization",
+      "recorded_primary": 0.9875353715596339,
+      "terms": [
+        {
+          "coefficient": 0.5,
+          "pauli": "ZI"
+        },
+        {
+          "coefficient": 0.5,
+          "pauli": "IZ"
+        }
+      ]
+    },
+    {
+      "case_id": "ising_2_corr_step2",
+      "cohort": "main_25",
+      "constant": 0.0,
+      "family_id": "ising_dynamics",
+      "formula": "weighted_pauli",
+      "measurement_groups": [
+        {
+          "group_id": "g0",
+          "logical_to_physical": {
+            "0": 0,
+            "1": 1
+          },
+          "observables": [
+            "ZZ"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[2];\ncreg c[2];\nrz(1.5707963267948966) q[0];\nsx q[0];\nrz(1.5707963267948966) q[0];\ncz q[0],q[1];\nrz(-1.570796326794897) q[1];\nsx q[1];\nrz(-2.7415926535897928) q[1];\nsx q[1];\nrz(-1.5707963267948966) q[1];\ncz q[0],q[1];\nrz(1.5707963267948966) q[0];\nsx q[0];\nrz(3.3815926535897933) q[0];\nsx q[0];\nrz(7.8539816339744828) q[0];\nrz(0.23999999999999932) q[1];\ncz q[0],q[1];\nrz(-1.570796326794897) q[1];\nsx q[1];\nrz(-2.7415926535897928) q[1];\nsx q[1];\nrz(-1.5707963267948966) q[1];\ncz q[0],q[1];\nrz(1.5707963267948966) q[0];\nsx q[0];\nrz(3.3815926535897933) q[0];\nsx q[0];\nrz(7.8539816339744828) q[0];\nrz(1.8107963267948968) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\n"
+        }
+      ],
+      "n_qubits": 2,
+      "primary_name": "end_correlation",
+      "recorded_primary": -0.47204717867668355,
+      "terms": [
+        {
+          "coefficient": 1.0,
+          "pauli": "ZZ"
+        }
+      ]
+    },
+    {
+      "case_id": "ising_4_mag_step2",
+      "cohort": "main_25",
+      "constant": 0.0,
+      "family_id": "ising_dynamics",
+      "formula": "weighted_pauli",
+      "measurement_groups": [
+        {
+          "group_id": "g0",
+          "logical_to_physical": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3
+          },
+          "observables": [
+            "IIIZ",
+            "IIZI",
+            "IZII",
+            "ZIII"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[4];\ncreg c[4];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\ncz q[0],q[1];\nrz(1.5707963267948957) q[1];\nsx q[1];\nrz(-2.9015926535897929) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\ncz q[0],q[1];\nrz(1.5707963267948966) q[0];\nsx q[0];\nrz(3.2415926535897932) q[0];\nsx q[0];\nrz(7.8539816339744828) q[0];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[1],q[2];\nrz(1.5707963267948957) q[2];\nsx q[2];\nrz(-2.9015926535897929) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[1],q[2];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.6707963267948962) q[1];\ncz q[0],q[1];\nrz(1.5707963267948957) q[1];\nsx q[1];\nrz(-2.9015926535897929) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\ncz q[0],q[1];\nrz(1.5707963267948966) q[0];\nsx q[0];\nrz(3.2415926535897932) q[0];\nsx q[0];\nrz(7.8539816339744828) q[0];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948957) q[3];\nsx q[3];\nrz(-2.9015926535897929) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.6707963267948962) q[2];\ncz q[1],q[2];\nrz(1.5707963267948957) q[2];\nsx q[2];\nrz(-2.9015926535897929) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[1],q[2];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(3.2415926535897932) q[1];\nsx q[1];\nrz(7.8539816339744828) q[1];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\nrz(0.099999999999999201) q[3];\ncz q[2],q[3];\nrz(1.5707963267948957) q[3];\nsx q[3];\nrz(-2.9015926535897929) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(3.2415926535897932) q[2];\nsx q[2];\nrz(7.8539816339744828) q[2];\nrz(1.6707963267948962) q[3];\nsx q[3];\nrz(1.5707963267948957) q[3];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\n"
+        }
+      ],
+      "n_qubits": 4,
+      "primary_name": "mean_magnetization",
+      "recorded_primary": 0.9807697490314708,
+      "terms": [
+        {
+          "coefficient": 0.25,
+          "pauli": "ZIII"
+        },
+        {
+          "coefficient": 0.25,
+          "pauli": "IZII"
+        },
+        {
+          "coefficient": 0.25,
+          "pauli": "IIZI"
+        },
+        {
+          "coefficient": 0.25,
+          "pauli": "IIIZ"
+        }
+      ]
+    },
+    {
+      "case_id": "ising_4_end_step3",
+      "cohort": "examined_5",
+      "constant": 0.0,
+      "family_id": "ising_dynamics",
+      "formula": "weighted_pauli",
+      "measurement_groups": [
+        {
+          "group_id": "g0",
+          "logical_to_physical": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3
+          },
+          "observables": [
+            "ZIIZ"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[4];\ncreg c[4];\nx q[0];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(-1.5707963267948966) q[1];\ncz q[0],q[1];\nrz(1.5707963267948992) q[1];\nsx q[1];\nrz(-3.0215926535897939) q[1];\nsx q[1];\nrz(1.5707963267948939) q[1];\ncz q[0],q[1];\nrz(1.5707963267948966) q[0];\nsx q[0];\nrz(3.1715926535897929) q[0];\nsx q[0];\nrz(7.8539816339744828) q[0];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[1],q[2];\nrz(-1.5707963267948979) q[2];\nsx q[2];\nrz(-3.021592653589793) q[2];\nsx q[2];\nrz(-1.5707963267948957) q[2];\ncz q[1],q[2];\nrz(1.5707963267948957) q[1];\nsx q[1];\nrz(1.6307963267948962) q[1];\ncz q[0],q[1];\nrz(1.5707963267948992) q[1];\nsx q[1];\nrz(-3.0215926535897939) q[1];\nsx q[1];\nrz(1.5707963267948939) q[1];\ncz q[0],q[1];\nrz(1.5707963267948966) q[0];\nsx q[0];\nrz(3.1715926535897929) q[0];\nsx q[0];\nrz(7.8539816339744828) q[0];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948992) q[3];\nsx q[3];\nrz(-3.0215926535897939) q[3];\nsx q[3];\nrz(1.5707963267948939) q[3];\ncz q[2],q[3];\nrz(1.5707963267948957) q[2];\nsx q[2];\nrz(1.6007963267948959) q[2];\ncz q[1],q[2];\nrz(-1.5707963267948979) q[2];\nsx q[2];\nrz(-3.021592653589793) q[2];\nsx q[2];\nrz(-1.5707963267948957) q[2];\ncz q[1],q[2];\nrz(1.5707963267948957) q[1];\nsx q[1];\nrz(1.6307963267948962) q[1];\ncz q[0],q[1];\nrz(1.5707963267948992) q[1];\nsx q[1];\nrz(-3.0215926535897939) q[1];\nsx q[1];\nrz(1.5707963267948939) q[1];\ncz q[0],q[1];\nrz(1.5707963267948966) q[0];\nsx q[0];\nrz(3.1715926535897929) q[0];\nsx q[0];\nrz(7.8539816339744828) q[0];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\nrz(0.059999999999999609) q[3];\ncz q[2],q[3];\nrz(1.5707963267948992) q[3];\nsx q[3];\nrz(-3.0215926535897939) q[3];\nsx q[3];\nrz(1.5707963267948939) q[3];\ncz q[2],q[3];\nrz(1.5707963267948957) q[2];\nsx q[2];\nrz(1.6007963267948959) q[2];\ncz q[1],q[2];\nrz(-1.5707963267948979) q[2];\nsx q[2];\nrz(-3.021592653589793) q[2];\nsx q[2];\nrz(-1.5707963267948957) q[2];\ncz q[1],q[2];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(3.2015926535897932) q[1];\nsx q[1];\nrz(7.8539816339744828) q[1];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\nrz(0.059999999999999609) q[3];\ncz q[2],q[3];\nrz(1.5707963267948992) q[3];\nsx q[3];\nrz(-3.0215926535897939) q[3];\nsx q[3];\nrz(1.5707963267948939) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(3.1715926535897929) q[2];\nsx q[2];\nrz(7.8539816339744828) q[2];\nrz(1.6307963267948962) q[3];\nsx q[3];\nrz(1.5707963267948957) q[3];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\n"
+        }
+      ],
+      "n_qubits": 4,
+      "primary_name": "end_correlation",
+      "recorded_primary": -0.9800538300552027,
+      "terms": [
+        {
+          "coefficient": 1.0,
+          "pauli": "ZIIZ"
+        }
+      ]
+    },
+    {
+      "case_id": "ising_6_mag_step1",
+      "cohort": "main_25",
+      "constant": 0.0,
+      "family_id": "ising_dynamics",
+      "formula": "weighted_pauli",
+      "measurement_groups": [
+        {
+          "group_id": "g0",
+          "logical_to_physical": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5
+          },
+          "observables": [
+            "IIIIIZ",
+            "IIIIZI",
+            "IIIZII",
+            "IIZIII",
+            "IZIIII",
+            "ZIIIII"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[6];\ncreg c[6];\nrz(1.5707963267948966) q[0];\nsx q[0];\nrz(1.5707963267948966) q[0];\ncz q[0],q[1];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(-2.8415926535897933) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\ncz q[0],q[1];\nrz(1.5707963267948966) q[0];\nsx q[0];\nrz(3.3215926535897933) q[0];\nsx q[0];\nrz(7.8539816339744828) q[0];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\ncz q[1],q[2];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(-2.8415926535897933) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[1],q[2];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(3.3215926535897933) q[1];\nsx q[1];\nrz(7.8539816339744828) q[1];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[2],q[3];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(-2.8415926535897933) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(3.3215926535897933) q[2];\nsx q[2];\nrz(7.8539816339744828) q[2];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[3],q[4];\nrz(1.5707963267948966) q[4];\nsx q[4];\nrz(-2.8415926535897933) q[4];\nsx q[4];\nrz(1.5707963267948966) q[4];\ncz q[3],q[4];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(3.3215926535897933) q[3];\nsx q[3];\nrz(7.8539816339744828) q[3];\nrz(1.5707963267948966) q[4];\nsx q[4];\nrz(1.5707963267948966) q[4];\ncz q[4],q[5];\nrz(1.5707963267948966) q[5];\nsx q[5];\nrz(-2.8415926535897933) q[5];\nsx q[5];\nrz(1.5707963267948966) q[5];\ncz q[4],q[5];\nrz(1.5707963267948966) q[4];\nsx q[4];\nrz(3.3215926535897933) q[4];\nsx q[4];\nrz(7.8539816339744828) q[4];\nrz(1.7507963267948963) q[5];\nsx q[5];\nrz(1.5707963267948957) q[5];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\nmeasure q[4] -> c[4];\nmeasure q[5] -> c[5];\n"
+        }
+      ],
+      "n_qubits": 6,
+      "primary_name": "mean_magnetization",
+      "recorded_primary": -1.9081958235744875e-17,
+      "terms": [
+        {
+          "coefficient": 0.16666666666666666,
+          "pauli": "ZIIIII"
+        },
+        {
+          "coefficient": 0.16666666666666666,
+          "pauli": "IZIIII"
+        },
+        {
+          "coefficient": 0.16666666666666666,
+          "pauli": "IIZIII"
+        },
+        {
+          "coefficient": 0.16666666666666666,
+          "pauli": "IIIZII"
+        },
+        {
+          "coefficient": 0.16666666666666666,
+          "pauli": "IIIIZI"
+        },
+        {
+          "coefficient": 0.16666666666666666,
+          "pauli": "IIIIIZ"
+        }
+      ]
+    },
+    {
+      "case_id": "ising_8_end_step1",
+      "cohort": "main_25",
+      "constant": 0.0,
+      "family_id": "ising_dynamics",
+      "formula": "weighted_pauli",
+      "measurement_groups": [
+        {
+          "group_id": "g0",
+          "logical_to_physical": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5,
+            "6": 6,
+            "7": 7
+          },
+          "observables": [
+            "ZIIIIIIZ"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[8];\ncreg c[8];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\ncz q[0],q[1];\nrz(1.5707963267948974) q[1];\nsx q[1];\nrz(-3.0015926535897934) q[1];\nsx q[1];\nrz(1.5707963267948957) q[1];\ncz q[0],q[1];\nrz(1.5707963267948966) q[0];\nsx q[0];\nrz(3.2215926535897932) q[0];\nsx q[0];\nrz(7.8539816339744828) q[0];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\ncz q[1],q[2];\nrz(1.5707963267948974) q[2];\nsx q[2];\nrz(-3.0015926535897934) q[2];\nsx q[2];\nrz(1.5707963267948957) q[2];\ncz q[1],q[2];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(3.2215926535897932) q[1];\nsx q[1];\nrz(7.8539816339744828) q[1];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\ncz q[2],q[3];\nrz(1.5707963267948974) q[3];\nsx q[3];\nrz(-3.0015926535897934) q[3];\nsx q[3];\nrz(1.5707963267948957) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(3.2215926535897932) q[2];\nsx q[2];\nrz(7.8539816339744828) q[2];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\nrz(1.5707963267948966) q[4];\nsx q[4];\nrz(1.5707963267948966) q[4];\ncz q[3],q[4];\nrz(1.5707963267948974) q[4];\nsx q[4];\nrz(-3.0015926535897934) q[4];\nsx q[4];\nrz(1.5707963267948957) q[4];\ncz q[3],q[4];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(3.2215926535897932) q[3];\nsx q[3];\nrz(7.8539816339744828) q[3];\nrz(1.5707963267948966) q[4];\nsx q[4];\nrz(1.5707963267948966) q[4];\nrz(1.5707963267948966) q[5];\nsx q[5];\nrz(1.5707963267948966) q[5];\ncz q[4],q[5];\nrz(1.5707963267948974) q[5];\nsx q[5];\nrz(-3.0015926535897934) q[5];\nsx q[5];\nrz(1.5707963267948957) q[5];\ncz q[4],q[5];\nrz(1.5707963267948966) q[4];\nsx q[4];\nrz(3.2215926535897932) q[4];\nsx q[4];\nrz(7.8539816339744828) q[4];\nrz(1.5707963267948966) q[5];\nsx q[5];\nrz(1.5707963267948966) q[5];\nrz(1.5707963267948966) q[6];\nsx q[6];\nrz(1.5707963267948966) q[6];\ncz q[5],q[6];\nrz(1.5707963267948974) q[6];\nsx q[6];\nrz(-3.0015926535897934) q[6];\nsx q[6];\nrz(1.5707963267948957) q[6];\ncz q[5],q[6];\nrz(1.5707963267948966) q[5];\nsx q[5];\nrz(3.2215926535897932) q[5];\nsx q[5];\nrz(7.8539816339744828) q[5];\nrz(1.5707963267948966) q[6];\nsx q[6];\nrz(1.5707963267948966) q[6];\nrz(1.5707963267948966) q[7];\nsx q[7];\nrz(1.5707963267948966) q[7];\ncz q[6],q[7];\nrz(1.5707963267948974) q[7];\nsx q[7];\nrz(-3.0015926535897934) q[7];\nsx q[7];\nrz(1.5707963267948957) q[7];\ncz q[6],q[7];\nrz(1.5707963267948966) q[6];\nsx q[6];\nrz(3.2215926535897932) q[6];\nsx q[6];\nrz(7.8539816339744828) q[6];\nrz(1.6507963267948957) q[7];\nsx q[7];\nrz(1.5707963267948957) q[7];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\nmeasure q[4] -> c[4];\nmeasure q[5] -> c[5];\nmeasure q[6] -> c[6];\nmeasure q[7] -> c[7];\n"
+        }
+      ],
+      "n_qubits": 8,
+      "primary_name": "end_correlation",
+      "recorded_primary": 0.9936136416878125,
+      "terms": [
+        {
+          "coefficient": 1.0,
+          "pauli": "ZIIIIIIZ"
+        }
+      ]
+    },
+    {
+      "case_id": "param_hea_2_a",
+      "cohort": "main_25",
+      "constant": 0.0,
+      "family_id": "parametric_circuits",
+      "formula": "weighted_pauli",
+      "measurement_groups": [
+        {
+          "group_id": "g0",
+          "logical_to_physical": {
+            "0": 0,
+            "1": 1
+          },
+          "observables": [
+            "ZI"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[2];\ncreg c[2];\nrz(-3.1415926535897931) q[0];\nsx q[0];\nrz(2.9415926535897929) q[0];\nsx q[0];\nsx q[1];\nrz(2.0707963267948966) q[1];\nsx q[1];\ncz q[0],q[1];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\n"
+        }
+      ],
+      "n_qubits": 2,
+      "primary_name": "Z0",
+      "recorded_primary": 0.9800665778412415,
+      "terms": [
+        {
+          "coefficient": 1.0,
+          "pauli": "ZI"
+        }
+      ]
+    },
+    {
+      "case_id": "param_hea_2_b",
+      "cohort": "main_25",
+      "constant": 0.0,
+      "family_id": "parametric_circuits",
+      "formula": "weighted_pauli",
+      "measurement_groups": [
+        {
+          "group_id": "g0",
+          "logical_to_physical": {
+            "0": 0,
+            "1": 1
+          },
+          "observables": [
+            "ZI"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[2];\ncreg c[2];\nrz(-3.1415926535897931) q[0];\nsx q[0];\nrz(1.8415926535897933) q[0];\nsx q[0];\nsx q[1];\nrz(1.1707963267948962) q[1];\nsx q[1];\ncz q[0],q[1];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\n"
+        }
+      ],
+      "n_qubits": 2,
+      "primary_name": "Z0",
+      "recorded_primary": 0.2674988286245875,
+      "terms": [
+        {
+          "coefficient": 1.0,
+          "pauli": "ZI"
+        }
+      ]
+    },
+    {
+      "case_id": "param_hea_4_a",
+      "cohort": "main_25",
+      "constant": 0.0,
+      "family_id": "parametric_circuits",
+      "formula": "weighted_pauli",
+      "measurement_groups": [
+        {
+          "group_id": "g0",
+          "logical_to_physical": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3
+          },
+          "observables": [
+            "ZIII"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[4];\ncreg c[4];\nrz(-3.1415926535897931) q[0];\nsx q[0];\nrz(3.0415926535897935) q[0];\nsx q[0];\nsx q[1];\nrz(1.7707963267948967) q[1];\nsx q[1];\ncz q[0],q[1];\nsx q[0];\nrz(2.9415926535897929) q[0];\nsx q[0];\nrz(-3.1415926535897931) q[0];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nsx q[2];\nrz(1.8707963267948964) q[2];\nsx q[2];\ncz q[1],q[2];\nsx q[1];\nrz(2.0707963267948966) q[1];\nsx q[1];\ncz q[0],q[1];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\nsx q[3];\nrz(1.970796326794896) q[3];\nsx q[3];\ncz q[2],q[3];\nsx q[2];\nrz(2.1707963267948962) q[2];\nsx q[2];\ncz q[1],q[2];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\nrz(-3.1415926535897931) q[3];\nsx q[3];\nrz(3.0415926535897935) q[3];\nsx q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\n"
+        }
+      ],
+      "n_qubits": 4,
+      "primary_name": "Z0",
+      "recorded_primary": 0.9791107025395142,
+      "terms": [
+        {
+          "coefficient": 1.0,
+          "pauli": "ZIII"
+        }
+      ]
+    },
+    {
+      "case_id": "param_hea_4_b",
+      "cohort": "main_25",
+      "constant": 0.0,
+      "family_id": "parametric_circuits",
+      "formula": "weighted_pauli",
+      "measurement_groups": [
+        {
+          "group_id": "g0",
+          "logical_to_physical": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3
+          },
+          "observables": [
+            "ZIII"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[4];\ncreg c[4];\nrz(-3.1415926535897931) q[0];\nsx q[0];\nrz(2.2415926535897928) q[0];\nsx q[0];\nsx q[1];\nrz(1.2707963267948967) q[1];\nsx q[1];\ncz q[0],q[1];\nrz(-3.1415926535897931) q[0];\nsx q[0];\nrz(2.4415926535897929) q[0];\nsx q[0];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nsx q[2];\nrz(1.970796326794896) q[2];\nsx q[2];\ncz q[1],q[2];\nsx q[1];\nrz(1.0707963267948966) q[1];\nsx q[1];\ncz q[0],q[1];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\nsx q[3];\nrz(1.7707963267948967) q[3];\nsx q[3];\ncz q[2],q[3];\nsx q[2];\nrz(1.6707963267948962) q[2];\nsx q[2];\ncz q[1],q[2];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\nsx q[3];\nrz(2.3415926535897933) q[3];\nsx q[3];\nrz(-3.1415926535897931) q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\n"
+        }
+      ],
+      "n_qubits": 4,
+      "primary_name": "Z0",
+      "recorded_primary": 0.6245627910151789,
+      "terms": [
+        {
+          "coefficient": 1.0,
+          "pauli": "ZIII"
+        }
+      ]
+    },
+    {
+      "case_id": "param_hea_6",
+      "cohort": "examined_5",
+      "constant": 0.0,
+      "family_id": "parametric_circuits",
+      "formula": "weighted_pauli",
+      "measurement_groups": [
+        {
+          "group_id": "g0",
+          "logical_to_physical": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5
+          },
+          "observables": [
+            "ZIIIII"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[6];\ncreg c[6];\nrz(-3.1415926535897931) q[0];\nsx q[0];\nrz(2.9915926535897928) q[0];\nsx q[0];\nsx q[1];\nrz(1.9207963267948962) q[1];\nsx q[1];\ncz q[0],q[1];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nsx q[2];\nrz(2.1207963267948964) q[2];\nsx q[2];\ncz q[1],q[2];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\nsx q[3];\nrz(2.3207963267948966) q[3];\nsx q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\nsx q[4];\nrz(2.5207963267948967) q[4];\nsx q[4];\ncz q[3],q[4];\nrz(1.5707963267948966) q[4];\nsx q[4];\nrz(1.5707963267948966) q[4];\nsx q[5];\nrz(2.7207963267948969) q[5];\nsx q[5];\ncz q[4],q[5];\nrz(1.5707963267948966) q[5];\nsx q[5];\nrz(1.5707963267948966) q[5];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\nmeasure q[4] -> c[4];\nmeasure q[5] -> c[5];\n"
+        }
+      ],
+      "n_qubits": 6,
+      "primary_name": "Z0",
+      "recorded_primary": 0.9887710779360425,
+      "terms": [
+        {
+          "coefficient": 1.0,
+          "pauli": "ZIIIII"
+        }
+      ]
+    },
+    {
+      "case_id": "param_hea_8",
+      "cohort": "main_25",
+      "constant": 0.0,
+      "family_id": "parametric_circuits",
+      "formula": "weighted_pauli",
+      "measurement_groups": [
+        {
+          "group_id": "g0",
+          "logical_to_physical": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5,
+            "6": 6,
+            "7": 7
+          },
+          "observables": [
+            "ZIIIIIII"
+          ],
+          "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[8];\ncreg c[8];\nrz(-3.1415926535897931) q[0];\nsx q[0];\nrz(3.0915926535897933) q[0];\nsx q[0];\nsx q[1];\nrz(1.7707963267948967) q[1];\nsx q[1];\ncz q[0],q[1];\nrz(1.5707963267948966) q[1];\nsx q[1];\nrz(1.5707963267948966) q[1];\nsx q[2];\nrz(1.9207963267948962) q[2];\nsx q[2];\ncz q[1],q[2];\nrz(1.5707963267948966) q[2];\nsx q[2];\nrz(1.5707963267948966) q[2];\nsx q[3];\nrz(2.0707963267948966) q[3];\nsx q[3];\ncz q[2],q[3];\nrz(1.5707963267948966) q[3];\nsx q[3];\nrz(1.5707963267948966) q[3];\nsx q[4];\nrz(2.220796326794896) q[4];\nsx q[4];\ncz q[3],q[4];\nrz(1.5707963267948966) q[4];\nsx q[4];\nrz(1.5707963267948966) q[4];\nsx q[5];\nrz(2.3707963267948964) q[5];\nsx q[5];\ncz q[4],q[5];\nrz(1.5707963267948966) q[5];\nsx q[5];\nrz(1.5707963267948966) q[5];\nsx q[6];\nrz(2.5207963267948967) q[6];\nsx q[6];\ncz q[5],q[6];\nrz(1.5707963267948966) q[6];\nsx q[6];\nrz(1.5707963267948966) q[6];\nsx q[7];\nrz(2.6707963267948962) q[7];\nsx q[7];\ncz q[6],q[7];\nrz(1.5707963267948966) q[7];\nsx q[7];\nrz(1.5707963267948966) q[7];\nmeasure q[0] -> c[0];\nmeasure q[1] -> c[1];\nmeasure q[2] -> c[2];\nmeasure q[3] -> c[3];\nmeasure q[4] -> c[4];\nmeasure q[5] -> c[5];\nmeasure q[6] -> c[6];\nmeasure q[7] -> c[7];\n"
+        }
+      ],
+      "n_qubits": 8,
+      "primary_name": "Z0",
+      "recorded_primary": 0.9987502603949666,
+      "terms": [
+        {
+          "coefficient": 1.0,
+          "pauli": "ZIIIIIII"
+        }
+      ]
+    }
+  ],
+  "device": "IBM Fez (156Q Heron r2)",
+  "engine_version": "0.1.3",
+  "readout_calibration_tasks": 6,
+  "rounds": 3,
+  "shots_per_task": 4096,
+  "total_shots": 688128
+}

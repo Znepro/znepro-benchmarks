@@ -1,0 +1,28 @@
+{
+  "bit_order": "q0_left",
+  "case_id": "diag_asymmetric_3q",
+  "counts": {
+    "000": 566,
+    "001": 2268,
+    "010": 233,
+    "011": 840,
+    "100": 29,
+    "101": 113,
+    "110": 14,
+    "111": 33
+  },
+  "group_id": "g0",
+  "kind": "benchmark",
+  "local_id": "r2/diag_asymmetric_3q/g0",
+  "logical_to_physical": {
+    "0": 0,
+    "1": 1,
+    "2": 2
+  },
+  "measured_qubits": 3,
+  "qasm_sha256": "436512cd74ab712c2e6c4e0d1dd4d6c19d102d50b99ad71732f665e15742035b",
+  "round": 2,
+  "shots": 4096,
+  "source_bit_order": "qiskit",
+  "status": "COMPLETED"
+}
