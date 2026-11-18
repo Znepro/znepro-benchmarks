@@ -1,0 +1,157 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [6 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Length 3967 >>
+stream
+BT
+/F2 12 Tf
+1 0 0 1 54 748 Tm
+(Slide 1. Three-round utility-scale result) Tj
+/F1 10 Tf
+1 0 0 1 54 732 Tm
+(ZNEPro team evaluation on IBM Fez \(156Q Heron r2\). Engine 0.1.4.) Tj
+/F1 10 Tf
+1 0 0 1 54 719 Tm
+(Nine native circuits at 50, 80, and 100 qubits. Basis `rz`, `sx`, `x`, `cz`. Largest program: 732 `cz` gates. 27) Tj
+/F1 10 Tf
+1 0 0 1 54 706 Tm
+(stabilizer observables. Three rounds. 27 benchmark tasks plus 6 readout calibration tasks. 4,096 shots per task.) Tj
+/F1 10 Tf
+1 0 0 1 54 693 Tm
+(Benchmark shots 110,592. Total shots 135,168. Active register: 103 physical qubits.) Tj
+/F1 10 Tf
+1 0 0 1 54 680 Tm
+(Every arm is better than raw in all three rounds for 27 of 27 observables: `m3_in_session`,) Tj
+/F1 10 Tf
+1 0 0 1 54 667 Tm
+(`single_run_zero_telemetry`, `provider_target_card`, and `in_session_card`.) Tj
+/F1 10 Tf
+1 0 0 1 54 654 Tm
+(All 243 receipts are COMPLETED on engine_version 0.1.4. 81 receipts belong to each arm.) Tj
+/F1 10 Tf
+1 0 0 1 54 641 Tm
+() Tj
+/F2 12 Tf
+1 0 0 1 54 622 Tm
+(Slide 2. Mean absolute error by width) Tj
+/F1 10 Tf
+1 0 0 1 54 606 Tm
+(Each case-round has equal weight. Each row has 27 case-rounds.) Tj
+/F1 10 Tf
+1 0 0 1 54 593 Tm
+(| width | raw | m3_in_session | zero_telemetry | provider_target_card | in_session_card |) Tj
+/F1 10 Tf
+1 0 0 1 54 580 Tm
+(| `50` | 0.216833 | 0.115087 | 0.0891778 | 0.0463885 | 0.0442466 |) Tj
+/F1 10 Tf
+1 0 0 1 54 567 Tm
+(| `80` | 0.198532 | 0.137404 | 0.0632484 | 0.0300838 | 0.0451668 |) Tj
+/F1 10 Tf
+1 0 0 1 54 554 Tm
+(| `100` | 0.171007 | 0.114083 | 0.0562958 | 0.0428317 | 0.0401012 |) Tj
+/F1 10 Tf
+1 0 0 1 54 541 Tm
+() Tj
+/F2 12 Tf
+1 0 0 1 54 522 Tm
+(Slide 3. Mean absolute error by circuit) Tj
+/F1 10 Tf
+1 0 0 1 54 506 Tm
+(| circuit | raw | m3_in_session | zero_telemetry | provider_target_card | in_session_card |) Tj
+/F1 10 Tf
+1 0 0 1 54 493 Tm
+(| `mirror_brickwork_d8` | 0.278935 | 0.222392 | 9.8587e-06 | 1e-06 | 1e-06 |) Tj
+/F1 10 Tf
+1 0 0 1 54 480 Tm
+(| `clifford_ising_trotter_d6` | 0.202962 | 0.125667 | 0.179798 | 0.110476 | 0.120282 |) Tj
+/F1 10 Tf
+1 0 0 1 54 467 Tm
+(| `ghz_ladder_local_zz` | 0.104474 | 0.018515 | 0.0289138 | 0.00882671 | 0.00923194 |) Tj
+/F1 10 Tf
+1 0 0 1 54 454 Tm
+() Tj
+/F2 12 Tf
+1 0 0 1 54 435 Tm
+(Slide 4. Head to head with m3_in_session) Tj
+/F1 10 Tf
+1 0 0 1 54 419 Tm
+(On 81 case-rounds, `in_session_card` is strictly lower than `m3_in_session` on 76 and strictly higher on 5.) Tj
+/F1 10 Tf
+1 0 0 1 54 406 Tm
+(`provider_target_card` is strictly lower on 65 and strictly higher on 16.) Tj
+/F1 10 Tf
+1 0 0 1 54 393 Tm
+(Neither comparison has a tie.) Tj
+/F1 10 Tf
+1 0 0 1 54 380 Tm
+(`provider_target_card` keeps `error_1q`, `error_2q`, `t1_us`, `t2_us`, `prob_meas1_prep0`, and) Tj
+/F1 10 Tf
+1 0 0 1 54 367 Tm
+(`prob_meas0_prep1` for the 103 active qubits. Its witness is) Tj
+/F1 10 Tf
+1 0 0 1 54 354 Tm
+(`249cf82cd9b2137980b920afac9009873081c5b49577656275e2045710fc08f0`. `in_session_card` replaces the) Tj
+/F1 10 Tf
+1 0 0 1 54 341 Tm
+(two assignment probabilities with that round's all-zero and all-one pubs. `single_run_zero_telemetry` sends no) Tj
+/F1 10 Tf
+1 0 0 1 54 328 Tm
+(card.) Tj
+/F1 10 Tf
+1 0 0 1 54 315 Tm
+() Tj
+/F2 12 Tf
+1 0 0 1 54 296 Tm
+(Slide 5. Bit order and how to rebuild) Tj
+/F1 10 Tf
+1 0 0 1 54 280 Tm
+(Counts are stored `q0_left`. `source_bit_order` is `qiskit`: the source string had qubit 0 on the right, and the) Tj
+/F1 10 Tf
+1 0 0 1 54 267 Tm
+(published keys were reversed before storage. Do not reverse them again.) Tj
+/F1 10 Tf
+1 0 0 1 54 254 Tm
+(A round is better when the arm absolute error is lower than raw. Width, circuit, and weight means pool every) Tj
+/F1 10 Tf
+1 0 0 1 54 241 Tm
+(case-round with equal weight.) Tj
+/F1 10 Tf
+1 0 0 1 54 228 Tm
+(From this directory, `python3 reproduce.py` checks 243 receipts, 135,168 shots, both card witnesses, the three) Tj
+/F1 10 Tf
+1 0 0 1 54 215 Tm
+(mean tables, the 27 of 27 win counts, and the 76 of 81 and 65 of 81 head-to-head counts.) Tj
+/F1 10 Tf
+1 0 0 1 54 202 Tm
+() Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 5 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000185 00000 n 
+0000000260 00000 n 
+0000004279 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+4415
+%%EOF

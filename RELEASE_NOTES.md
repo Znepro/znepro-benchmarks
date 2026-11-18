@@ -1,5 +1,21 @@
 # Releases
 
+## ibm-fez-utility-100q-v1
+
+This is the ZNEPro team's utility-scale evaluation on IBM Fez (156Q Heron r2), engine 0.1.4.
+
+The hardware plan is 9 native circuits at 50, 80, and 100 qubits, 27 stabilizer observables, three rounds, and 135,168 shots. The largest program has 732 `cz` gates. The scored arms are `single_run_zero_telemetry`, `provider_target_card`, and `in_session_card`. `m3_in_session` is rebuilt from the stored all-zero and all-one histograms. Every arm is better than raw in all three rounds for 27 of 27 observables. `in_session_card` is strictly lower than `m3_in_session` on 76 of 81 case-rounds. `provider_target_card` is strictly lower on 65 of 81.
+
+Receipts cover all 27 observables: 81 for each arm and 243 in total. All scored receipts are verified against engine_version: "0.1.4". The provider card witness is `249cf82cd9b2137980b920afac9009873081c5b49577656275e2045710fc08f0`. The in-session card replaces assignment probabilities with that round's readout pubs.
+
+The PDF attached to this release is `ibm-fez-utility-100q-v1.pdf`.
+
+From the study directory:
+
+```bash
+python3 reproduce.py
+```
+
 ## ibm-fez-v1
 
 This is the ZNEPro team's evaluation on IBM Fez (156Q Heron r2), engine 0.1.3.

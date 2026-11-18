@@ -1,0 +1,14 @@
+{
+  "arm": "single_run_zero_telemetry",
+  "calibration_applied": false,
+  "case_id": "50_mirror_brickwork_d8",
+  "engine_version": "0.1.4",
+  "group_id": "g0",
+  "local_id": "r1/50_mirror_brickwork_d8/g0/IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIZZIIIIIIIIII",
+  "mitigated_expectation": 0.9999988723567055,
+  "observable": "IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIZZIIIIIIIIII",
+  "round": 1,
+  "status": "COMPLETED",
+  "target_observable": "IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIZZIIIIIIIIII",
+  "total_shots": 4096
+}

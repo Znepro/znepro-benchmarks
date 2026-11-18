@@ -1,0 +1,16 @@
+{
+  "arm": "in_session_card",
+  "calibration_applied": true,
+  "calibration_sha256": "ac8d88e6d2116432b77fa2388b4ca4eb6159c4998b43d0028e6fda790976cacf",
+  "card_name": "in_session_card",
+  "case_id": "100_mirror_brickwork_d8",
+  "engine_version": "0.1.4",
+  "group_id": "g0",
+  "local_id": "r1/100_mirror_brickwork_d8/g0/IIIIIIIIIIIIIIIIIIIIIIIZZIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII",
+  "mitigated_expectation": 0.9999990000000001,
+  "observable": "IIIIIIIIIIIIIIIIIIIIIIIZZIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII",
+  "round": 1,
+  "status": "COMPLETED",
+  "target_observable": "IIIIIIIIIIIIIIIIIIIIIIIZZIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII",
+  "total_shots": 4096
+}

@@ -1,0 +1,16 @@
+{
+  "arm": "provider_target_card",
+  "calibration_applied": true,
+  "calibration_sha256": "249cf82cd9b2137980b920afac9009873081c5b49577656275e2045710fc08f0",
+  "card_name": "provider_target_card",
+  "case_id": "100_ghz_ladder_local_zz",
+  "engine_version": "0.1.4",
+  "group_id": "g0",
+  "local_id": "r2/100_ghz_ladder_local_zz/g0/ZZZZIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII",
+  "mitigated_expectation": 0.9875118766647863,
+  "observable": "ZZZZIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII",
+  "round": 2,
+  "status": "COMPLETED",
+  "target_observable": "ZZZZIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII",
+  "total_shots": 4096
+}

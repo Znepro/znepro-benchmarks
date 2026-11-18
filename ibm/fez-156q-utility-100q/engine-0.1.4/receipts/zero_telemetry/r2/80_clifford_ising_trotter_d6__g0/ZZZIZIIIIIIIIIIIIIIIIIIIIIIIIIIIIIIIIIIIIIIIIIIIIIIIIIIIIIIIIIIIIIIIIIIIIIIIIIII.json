@@ -1,0 +1,14 @@
+{
+  "arm": "single_run_zero_telemetry",
+  "calibration_applied": false,
+  "case_id": "80_clifford_ising_trotter_d6",
+  "engine_version": "0.1.4",
+  "group_id": "g0",
+  "local_id": "r2/80_clifford_ising_trotter_d6/g0/ZZZIZIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII",
+  "mitigated_expectation": 0.6876984543880978,
+  "observable": "ZZZIZIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII",
+  "round": 2,
+  "status": "COMPLETED",
+  "target_observable": "ZZZIZIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII",
+  "total_shots": 4096
+}

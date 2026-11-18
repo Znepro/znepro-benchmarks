@@ -1,0 +1,16 @@
+{
+  "arm": "in_session_card",
+  "calibration_applied": true,
+  "calibration_sha256": "ac8d88e6d2116432b77fa2388b4ca4eb6159c4998b43d0028e6fda790976cacf",
+  "card_name": "in_session_card",
+  "case_id": "80_clifford_ising_trotter_d6",
+  "engine_version": "0.1.4",
+  "group_id": "g0",
+  "local_id": "r1/80_clifford_ising_trotter_d6/g0/ZZZIZIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII",
+  "mitigated_expectation": 0.7750402849734817,
+  "observable": "ZZZIZIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII",
+  "round": 1,
+  "status": "COMPLETED",
+  "target_observable": "ZZZIZIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII",
+  "total_shots": 4096
+}

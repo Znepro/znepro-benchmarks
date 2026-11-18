@@ -1,0 +1,14 @@
+{
+  "arm": "single_run_zero_telemetry",
+  "calibration_applied": false,
+  "case_id": "80_ghz_ladder_local_zz",
+  "engine_version": "0.1.4",
+  "group_id": "g0",
+  "local_id": "r1/80_ghz_ladder_local_zz/g0/IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIZIIIIIII",
+  "mitigated_expectation": -0.9686139019143889,
+  "observable": "IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIZIIIIIII",
+  "round": 1,
+  "status": "COMPLETED",
+  "target_observable": "IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIZIIIIIII",
+  "total_shots": 4096
+}

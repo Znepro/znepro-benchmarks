@@ -1,0 +1,16 @@
+{
+  "arm": "in_session_card",
+  "calibration_applied": true,
+  "calibration_sha256": "bbfa1760e1fceee62c20994335cc88ed5ded369faa9fad0b9e3548f7b29571de",
+  "card_name": "in_session_card",
+  "case_id": "50_ghz_ladder_local_zz",
+  "engine_version": "0.1.4",
+  "group_id": "g0",
+  "local_id": "r2/50_ghz_ladder_local_zz/g0/ZZIZZIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII",
+  "mitigated_expectation": 1.0,
+  "observable": "ZZIZZIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII",
+  "round": 2,
+  "status": "COMPLETED",
+  "target_observable": "ZZIZZIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII",
+  "total_shots": 4096
+}
