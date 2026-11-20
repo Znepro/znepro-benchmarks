@@ -1,0 +1,17 @@
+{
+  "arm": "single_run_zero_telemetry",
+  "bit_order": "q0_left",
+  "calibration_applied": false,
+  "case_id": "param_hea_2_a",
+  "client_version": "1.0.3",
+  "engine_version": "0.1.4",
+  "group_id": "g0",
+  "local_id": "r1/param_hea_2_a__g0/ZI",
+  "mitigated_expectation": 0.8988245425031015,
+  "observable": "ZI",
+  "readout_telemetry": false,
+  "round": 1,
+  "status": "COMPLETED",
+  "target_observable": "ZI",
+  "total_shots": 1000
+}

@@ -1,0 +1,17 @@
+{
+  "arm": "single_run_zero_telemetry",
+  "bit_order": "q0_left",
+  "calibration_applied": false,
+  "case_id": "diag_ghz_8q",
+  "client_version": "1.0.3",
+  "engine_version": "0.1.4",
+  "group_id": "g0",
+  "local_id": "r2/diag_ghz_8q__g0/ZIIIIIIZ",
+  "mitigated_expectation": 0.17080231329944665,
+  "observable": "ZIIIIIIZ",
+  "readout_telemetry": false,
+  "round": 2,
+  "status": "COMPLETED",
+  "target_observable": "ZIIIIIIZ",
+  "total_shots": 1000
+}

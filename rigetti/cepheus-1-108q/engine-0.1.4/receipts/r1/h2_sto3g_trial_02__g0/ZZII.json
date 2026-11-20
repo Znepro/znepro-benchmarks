@@ -1,0 +1,17 @@
+{
+  "arm": "single_run_zero_telemetry",
+  "bit_order": "q0_left",
+  "calibration_applied": false,
+  "case_id": "h2_sto3g_trial_02",
+  "client_version": "1.0.3",
+  "engine_version": "0.1.4",
+  "group_id": "g0",
+  "local_id": "r1/h2_sto3g_trial_02__g0/ZZII",
+  "mitigated_expectation": -0.7864949862336308,
+  "observable": "ZZII",
+  "readout_telemetry": false,
+  "round": 1,
+  "status": "COMPLETED",
+  "target_observable": "ZZII",
+  "total_shots": 1000
+}

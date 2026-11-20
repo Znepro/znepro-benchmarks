@@ -1,0 +1,17 @@
+{
+  "arm": "single_run_zero_telemetry",
+  "bit_order": "q0_left",
+  "calibration_applied": false,
+  "case_id": "h2_sto3g_trial_03",
+  "client_version": "1.0.3",
+  "engine_version": "0.1.4",
+  "group_id": "g0",
+  "local_id": "r3/h2_sto3g_trial_03__g0/IZIZ",
+  "mitigated_expectation": 0.5762957928152067,
+  "observable": "IZIZ",
+  "readout_telemetry": false,
+  "round": 3,
+  "status": "COMPLETED",
+  "target_observable": "IZIZ",
+  "total_shots": 1000
+}

@@ -1,0 +1,17 @@
+{
+  "arm": "single_run_zero_telemetry",
+  "bit_order": "q0_left",
+  "calibration_applied": false,
+  "case_id": "ising_4_mag_step2",
+  "client_version": "1.0.3",
+  "engine_version": "0.1.4",
+  "group_id": "g0",
+  "local_id": "r2/ising_4_mag_step2__g0/ZIII",
+  "mitigated_expectation": 0.8638768680558098,
+  "observable": "ZIII",
+  "readout_telemetry": false,
+  "round": 2,
+  "status": "COMPLETED",
+  "target_observable": "ZIII",
+  "total_shots": 1000
+}

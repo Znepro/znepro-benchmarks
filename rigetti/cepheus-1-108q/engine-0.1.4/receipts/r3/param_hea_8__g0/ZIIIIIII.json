@@ -1,0 +1,17 @@
+{
+  "arm": "single_run_zero_telemetry",
+  "bit_order": "q0_left",
+  "calibration_applied": false,
+  "case_id": "param_hea_8",
+  "client_version": "1.0.3",
+  "engine_version": "0.1.4",
+  "group_id": "g0",
+  "local_id": "r3/param_hea_8__g0/ZIIIIIII",
+  "mitigated_expectation": 0.9650573788509794,
+  "observable": "ZIIIIIII",
+  "readout_telemetry": false,
+  "round": 3,
+  "status": "COMPLETED",
+  "target_observable": "ZIIIIIII",
+  "total_shots": 1000
+}

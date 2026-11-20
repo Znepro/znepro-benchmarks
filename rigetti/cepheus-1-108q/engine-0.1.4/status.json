@@ -1,0 +1,17 @@
+{
+  "arm": "single_run_zero_telemetry",
+  "bit_order": "q0_left",
+  "candidate_receipts": 444,
+  "client_commit": "4ae05717ea7437320b8b5d49227a09475302808a",
+  "client_version": "1.0.3",
+  "engine_version": "0.1.4",
+  "main_all_three_better": 20,
+  "main_mean_smaller": 21,
+  "missing_coupling_telemetry_groups": 93,
+  "missing_readout_telemetry_groups": 162,
+  "planned_payloads": 444,
+  "zero_reference_cases": [
+    "diag_near_zero_2q",
+    "ising_6_mag_step1"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "arm": "single_run_zero_telemetry",
+  "bit_order": "q0_left",
+  "calibration_applied": false,
+  "case_id": "maxcut_square4_angles_a",
+  "client_version": "1.0.3",
+  "engine_version": "0.1.4",
+  "group_id": "g0",
+  "local_id": "r3/maxcut_square4_angles_a__g0/ZIIZ",
+  "mitigated_expectation": -0.02474571041033095,
+  "observable": "ZIIZ",
+  "readout_telemetry": false,
+  "round": 3,
+  "status": "COMPLETED",
+  "target_observable": "ZIIZ",
+  "total_shots": 1000
+}

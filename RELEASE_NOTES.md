@@ -47,3 +47,15 @@ From the study directory:
 ```bash
 python reproduce.py
 ```
+
+## cepheus engine 0.1.4 replay
+
+This is not a new processor execution and it does not replace `rigetti-cepheus-v1`.
+
+Engine 0.1.4 rescores the published Cepheus counts with `single_run_zero_telemetry`. The directory is `rigetti/cepheus-1-108q/engine-0.1.4/`. It holds 444 `COMPLETED` receipts, `calibration_applied` false, and `readout_telemetry` false. The recorded audit has no readout data on 162 groups and no coupling data on 93 two-qubit-gated groups. Expectations and the 20 of 25 and 21 of 25 headlines match engine 0.1.3, including the zero-reference cases `diag_near_zero_2q` and `ising_6_mag_step1`. The 0.1.3 receipts are left unchanged. The shot total of the archive stays 985,296.
+
+From the study directory:
+
+```bash
+python3 reproduce.py
+```
